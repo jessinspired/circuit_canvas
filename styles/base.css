@@ -7,9 +7,12 @@
     --black-2: #4A4A4A;
 
     --purple-1: #2E1562;
+
     --pink-1: #F45B7D;
 
     --yellow-1: #FFFAE7;
+    --yellow-2: #FEF1B6;
+    --yellow-3: #6A5808;
 
     /* font families */
     --lexend-regular: 'lexend-regular';
@@ -35,6 +38,8 @@ body {
     margin: 1.5rem 0;
     font-family: 'lexend-regular', sans-serif;
     color: var(--black-2);
+    display: grid;
+    row-gap: 4rem;
 }
 
 body > * {

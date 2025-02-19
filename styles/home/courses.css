@@ -1,0 +1,46 @@
+.courses-section {
+    display: grid;
+    row-gap: 2rem;
+}
+
+.courses-section > :first-child {
+    background-color: var(--yellow-2);
+    width: max-content;
+    padding: .2rem 1rem;
+    color: var(--yellow-3);
+    font-family: var(--lexend-semibold);
+    border-radius: .4rem;
+}
+
+
+.courses-section > :nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses-section > :nth-child(2) > :last-child {
+    color: var(--purple-1);
+    text-decoration: none;
+    border: 1px solid var(--purple-1);
+    padding: .2rem 1rem;
+    border-radius: 2rem;
+}
+
+.courses-section h2 {
+    color: var(--black-1);
+    max-width: 20rem;
+}
+
+.courses-section article {
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.courses-section article p {
+    max-width: 30rem;
+    color: var(--gray-2);
+}
