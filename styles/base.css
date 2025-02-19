@@ -4,16 +4,19 @@
     --gray-2: #57595A;
 
     --black-1: #3B3B3B;
+    --black-2: #4A4A4A;
 
     --purple-1: #2E1562;
     --pink-1: #F45B7D;
+
+    --yellow-1: #FFFAE7;
 
     /* font families */
     --lexend-regular: 'lexend-regular';
     --lexend-light: 'lexend-light';
     --lexend-bold: 'lexend-bold';
     --lexend-semibold: 'lexend-semibold';
-
+    --lexend-medium: 'lexend-medium';
 }
 
 * {
@@ -31,6 +34,7 @@ body {
     padding: 0;
     margin: 1.5rem 0;
     font-family: 'lexend-regular', sans-serif;
+    color: var(--black-2);
 }
 
 body > * {
