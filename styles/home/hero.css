@@ -81,14 +81,14 @@
         /* background-color: antiquewhite; */
         /* min-height: 60vh; */
         /* background-color: aliceblue; */
-        padding-bottom: 8rem;
+        padding-bottom: 10rem;
     }
 
     .hero-image-container {
         position: absolute;
         right: clamp(-5rem, -15vw + .2rem, -1rem);
         z-index: -1;
-        width: clamp(12rem, 40vw + .2rem, 20rem);
+        width: clamp(15rem, 40vw + .2rem, 20rem);
         bottom: 0;
     }
 

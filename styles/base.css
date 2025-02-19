@@ -34,7 +34,7 @@ body {
 }
 
 body > * {
-    padding: 0 clamp(2rem, 4vw + .5rem, 4rem);
+    padding: 0 clamp(1rem, 3vw + .1rem, 4rem);
 }
 
 h1, h2, h3, h4, h5, h6 {
