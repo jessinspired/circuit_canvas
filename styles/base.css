@@ -1,0 +1,42 @@
+:root {
+    /* color variables */
+    --gray-1: #6C757D;
+    --gray-2: #57595A;
+
+    --black1: #3B3B3B;
+
+    --purple-1: #2E1562;
+    --pink-1: #F45B7D;
+
+    /* font families */
+    --lexend-regular: 'lexend-regular';
+    --lexend-light: 'lexend-light';
+    --lexend-bold: 'lexend-bold';
+    --lexend-semibold: 'lexend-semibold';
+
+}
+
+* {
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 1rem clamp(2rem, 10vw + .5rem, 4rem);
+    font-family: 'lexend-regular', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--lexend-semibold);
+}
+
+p {
+    font-family: var(--lexend-light);
+}

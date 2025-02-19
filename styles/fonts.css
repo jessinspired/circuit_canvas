@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'lexend-regular';
+    src: url('/fonts/lexend/Lexend-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'lexend-light';
+    src: url('/fonts/lexend/Lexend-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'lexend-bold';
+    src: url('/fonts/lexend/Lexend-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'lexend-semibold';
+    src: url('/fonts/lexend/Lexend-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
