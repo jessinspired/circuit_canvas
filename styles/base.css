@@ -3,7 +3,7 @@
     --gray-1: #6C757D;
     --gray-2: #57595A;
 
-    --black1: #3B3B3B;
+    --black-1: #3B3B3B;
 
     --purple-1: #2E1562;
     --pink-1: #F45B7D;
@@ -29,14 +29,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
     margin: 0;
-    padding: 1rem clamp(2rem, 10vw + .5rem, 4rem);
+    padding: 1.5rem clamp(2rem, 10vw + .5rem, 4rem);
     font-family: 'lexend-regular', sans-serif;
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--lexend-semibold);
-}
-
-p {
-    font-family: var(--lexend-light);
 }
