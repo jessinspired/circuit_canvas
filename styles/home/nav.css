@@ -37,11 +37,11 @@
     column-gap: 2rem;
 }
 
-.primary-nav-links-container > :first-child > :first-child {
+.primary-nav-links-container > :first-child > .active {
     color: var(--purple-1);
 }
 
-.primary-nav-links-container > :first-child > :not(:first-child) {
+.primary-nav-links-container > :first-child > * {
     color: var(--gray-1);
 }
 
