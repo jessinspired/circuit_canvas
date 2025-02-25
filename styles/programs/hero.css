@@ -32,6 +32,9 @@ body {
 
 .hero-img-container {
     width: clamp(20rem, 70vw + .5rem, 50rem);
+    justify-self: center;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .hero-img-container img {
