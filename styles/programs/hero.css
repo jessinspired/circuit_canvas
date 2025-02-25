@@ -1,0 +1,42 @@
+body {
+    row-gap: 0;
+    margin-top: 0;
+}
+
+.primary-nav {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    background-color: var(--gray-3);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--gray-3);
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    overflow-x: hidden;
+}
+
+.hero header {
+    width: 35rem;
+    width: min(35rem, 100%);
+}
+
+.hero h1 {
+    font-size: clamp(1.5rem, 5vw + .5rem, 3rem);
+    color: var(--black-1);
+    margin-top: 5rem;
+}
+
+.hero-img-container {
+    width: clamp(15rem, 70vw + .5rem, 50rem);
+    justify-self: center;
+    margin: 0 auto;
+}
+
+.hero-img-container img {
+    width: 100%;
+    height: 100%;
+}

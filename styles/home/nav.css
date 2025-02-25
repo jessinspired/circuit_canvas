@@ -57,6 +57,7 @@
 .primary-nav-links-container > :last-child > :first-child {
     color: var(--pink-1);
     border: 1px solid var(--pink-1);
+    background-color: white;
 }
 
 .primary-nav-links-container > :last-child > :last-child {
