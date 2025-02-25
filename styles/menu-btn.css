@@ -9,7 +9,7 @@
 
   .toggle {
     position: relative;
-    width: 20px;
+    width: 30px;
     height: 6px;
     cursor: pointer;
     display: grid;
@@ -22,7 +22,7 @@
 
   .bars {
     width: 100%;
-    height: 2.3px;
+    height: 2.4px;
     background-color: black;
     border-radius: 2rem;
   }
