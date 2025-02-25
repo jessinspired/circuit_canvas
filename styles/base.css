@@ -40,6 +40,9 @@
 
     /* z-index */
     --negative-one: -1;
+    --index-one: 1;
+    --index-two: 2;
+    --index-three: 3;
     --nav-card: 30;
     --close-nav-card: 31;
 }

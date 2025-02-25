@@ -17,6 +17,8 @@
     row-gap: 1rem;
     column-gap: 1rem;
     color: white;
+    position: relative;
+    overflow: hidden;
 }
 
 .program-card > :first-child {
@@ -33,15 +35,16 @@
     outline: none;
     padding: 1rem 1rem;
     border-radius: 2rem;
-    font-family: var(--lexend-semibold)
+    font-family: var(--lexend-semibold);
+    z-index: var(--index-two);
 }
 
-.program-card > :last-child > :first-child {
+.program-card > :nth-child(4) > :first-child {
     background-color: var(--purple-2);
     color: white;
 }
 
-.program-card > :last-child > :last-child {
+.program-card > :nth-child(4) > :last-child {
     color: var(--purple-2);
 }
 
@@ -79,6 +82,12 @@
     flex-wrap: wrap;
 }
 
+.program-cards-section > *:nth-child(odd) > :nth-child(5) {
+    position: absolute;
+    bottom: -3rem;
+    right: -5.5rem;
+}
+
 /* even design */
 .program-cards-section > *:nth-child(even) > :nth-child(1) {
     grid-column: 2 / 3;
@@ -107,6 +116,11 @@
     flex-wrap: wrap;
 }
 
+.program-cards-section > *:nth-child(even) > :nth-child(5) {
+    position: absolute;
+    left: -5.5rem;
+    bottom: -4rem;
+}
 
 
 /* individual cards */
