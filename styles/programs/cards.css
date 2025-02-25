@@ -132,12 +132,15 @@
 
 /* media queries */
 @media screen and (max-width: 690px) {
+    .program-cards-section {
+        row-gap: 2rem;
+    }
+
     #program-cards-section .program-card {
         grid-template-columns: 100%;
-        text-align: center;
         grid-auto-rows: auto;
-        row-gap: 3rem;
-        padding: 4rem 1rem;
+        row-gap: 1.5rem;
+        padding: 2rem 1rem;
         justify-items: center;
     }
 
@@ -145,6 +148,7 @@
         grid-row: 1 / 2;
         grid-column: 1 / 2;
         width: 100%;
+        text-align: center;
     }
 
     #program-cards-section .program-card > :nth-child(1) {
