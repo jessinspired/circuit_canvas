@@ -10,6 +10,8 @@
     --black-2: #4A4A4A;
 
     --purple-1: #2E1562;
+    --purple-2: #130929;
+    --purple-3: #736296;
 
     --pink-1: #F45B7D;
     --pink-2: #851C33;
@@ -20,8 +22,13 @@
     --yellow-2: #FEF1B6;
     --yellow-3: #6A5808;
     --yellow-4: #FDDA42;
+    --yellow-5: #FCD113;
+
+    --green-1: #00A56D;
 
     --orange-1: #FFF1E6;
+
+    --blue-1: #00ABFD;
 
     /* font families */
     --lexend-regular: 'lexend-regular';
