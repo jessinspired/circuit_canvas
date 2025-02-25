@@ -31,9 +31,7 @@ body {
 }
 
 .hero-img-container {
-    width: clamp(15rem, 70vw + .5rem, 50rem);
-    justify-self: center;
-    margin: 0 auto;
+    width: clamp(20rem, 70vw + .5rem, 50rem);
 }
 
 .hero-img-container img {
