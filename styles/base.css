@@ -18,6 +18,9 @@
     --yellow-1: #FFFAE7;
     --yellow-2: #FEF1B6;
     --yellow-3: #6A5808;
+    --yellow-4: #FDDA42;
+
+    --orange-1: #FFF1E6;
 
     /* font families */
     --lexend-regular: 'lexend-regular';
@@ -45,7 +48,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
     padding: 0;
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 0 0;
     font-family: 'lexend-regular', sans-serif;
     color: var(--black-2);
     display: grid;

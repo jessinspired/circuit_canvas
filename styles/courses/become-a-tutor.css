@@ -1,0 +1,48 @@
+.become-a-tutor {
+    background-color: var(--orange-1);
+    display: flex;
+    /* justify-content: space-evenly; */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    column-gap: 3rem;
+    row-gap: 2rem;
+    overflow-x: hidden;
+}
+
+.become-a-tutor > :first-child {
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    width: min(40rem, 100%);
+}
+
+.become-a-tutor > :first-child img {
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.become-a-tutor article {
+   display: grid;
+   align-content: flex-start;
+   padding-top: 1rem;
+   row-gap: 3rem;
+   width: min(35rem, 90%);
+}
+
+.become-a-tutor h1 {
+    font-size: clamp(1.5rem, 5vw + .5rem, 3rem);
+    color: var(--black-1);
+}
+
+.become-a-tutor article a {
+    background-color: var(--yellow-4);
+    color: var(--black-1);
+    text-decoration: none;
+    width: max-content;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    font-family: var(--lexend-semibold);
+}
