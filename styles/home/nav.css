@@ -64,7 +64,36 @@
     background-color: var(--pink-1);
 }
 
+.toggle-nav-card {
+    z-index: var(--close-nav-card);
+}
 
+.toggle-nav-card > * {
+    z-index: var(--close-nav-card);
+}
+
+.nav-checkbox:checked ~ .nav-card {
+    display: grid;
+}
+
+.nav-card {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vw;
+    display: none;
+    padding: 5rem 4rem 2rem 4rem;
+    align-content: flex-start;
+    z-index: var(--nav-card);
+    background-color: white;
+    row-gap: 2rem;
+}
+
+/* .nav-card > :first-child {
+    justify-self: right;
+    font-size: 2rem;
+} */
 
 
 /* media queries */

@@ -28,6 +28,8 @@
 
     /* z-index */
     --negative-one: -1;
+    --nav-card: 30;
+    --close-nav-card: 31;
 }
 
 * {
