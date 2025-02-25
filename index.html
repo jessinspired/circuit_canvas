@@ -36,7 +36,7 @@
         </div>
 
         <div class="primary-nav-menu-btn">
-            <input class="nav-checkbox" id="nav-checkbox" type="checkbox">
+            <input class="nav-checkbox" id="nav-checkbox" type="checkbox" onchange="document.body.style.overflow = this.checked ? 'hidden' : '';">
             <label class="toggle toggle-nav-card" for="nav-checkbox">
                 <div id="bar1" class="bars"></div>
                 <div id="bar2" class="bars"></div>
@@ -45,7 +45,6 @@
 
 
             <nav class="nav-card" id="nav-card">
-                <!-- <label for="nav-checkbox">x</label> -->
                 <a href="/">Who we are</a>
                 <a href="/">Our programs</a>
                 <a href="/courses.html">Explore courses</a>
