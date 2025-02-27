@@ -37,6 +37,7 @@
     --lexend-bold: 'lexend-bold';
     --lexend-semibold: 'lexend-semibold';
     --lexend-medium: 'lexend-medium';
+    --lexend-extra-light: 'lexend-extra-light';
 
     /* z-index */
     --negative-one: -1;
@@ -64,7 +65,7 @@ body {
     font-family: 'lexend-regular', sans-serif;
     color: var(--black-2);
     display: grid;
-    row-gap: 4rem;
+    /* row-gap: 4rem; */
 }
 
 body > * {

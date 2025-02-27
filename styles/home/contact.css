@@ -1,0 +1,56 @@
+.contact-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    background-color: var(--green-1);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-section > :first-child {
+    display: flex;
+    align-items: center;
+}
+
+.contact-section h1 {
+    font-family: var(--lexend-extra-light);
+    letter-spacing: 2px;
+}
+
+.contact-section > :nth-child(2) {
+    color: white;
+    text-decoration: none;
+    color: var(--green-1);
+    background-color: white;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+}
+
+.contact-section > :nth-child(3),
+.contact-section > :nth-child(4) {
+    width: 20rem;
+    width: clamp(10rem, 50vw + .2rem, 20rem);
+    position: absolute;
+    bottom: 0;
+}
+
+.contact-section > :nth-child(3) {
+    right: -10rem;
+}
+
+.contact-section > :nth-child(4) {
+    left: -5rem;
+}
+
+
+@media screen and (max-width: 563px) {
+    .contact-section {
+        justify-content: left;
+    }
+}

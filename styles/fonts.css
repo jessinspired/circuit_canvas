@@ -11,6 +11,12 @@
     font-weight: normal;
     font-style: normal;
   }
+@font-face {
+    font-family: 'lexend-extra-light';
+    src: url('/fonts/lexend/Lexend-ExtraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
   @font-face {
     font-family: 'lexend-bold';
