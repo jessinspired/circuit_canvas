@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/home/hero.css">
     <link rel="stylesheet" href="styles/home/courses.css">
     <link rel="stylesheet" href="styles/home/contact.css">
+    <link rel="stylesheet" href="styles/home/faq.css">
 
 
     <title>Circuit Canvas</title>
@@ -93,7 +94,50 @@
                 </p>
             </article>
 
-            <a href="/courses.html">see all our courses</a>
+            <a href="/courses.html">See all our courses</a>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-accordion">
+            <div class="accordion-item">
+                <button onclick="this.nextElementSibling.classList.toggle('expand'); this.classList.toggle('active'); this.querySelector('img').classList.toggle('rotate')">
+                    <span>How do I enrol in a course/program?</span>
+                    <img src="/assets/shapes/caret-down.svg" alt="caret-down">
+                </button>
+                <div class="accordion-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odit laboriosam nam sed possimus? Voluptate non exercitationem quam saepe corrupti!
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button onclick="this.nextElementSibling.classList.toggle('expand'); this.classList.toggle('active'); this.querySelector('img').classList.toggle('rotate')">
+                    <span>Do you offer refunds or guarantees on courses?</span>
+                    <img src="/assets/shapes/caret-down.svg" alt="caret-down">
+                </button>
+                <div class="accordion-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odit laboriosam nam sed possimus? Voluptate non exercitationem quam saepe corrupti!
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button onclick="this.nextElementSibling.classList.toggle('expand'); this.classList.toggle('active'); this.querySelector('img').classList.toggle('rotate')">
+                    <span>Do you offer certifications upon completion?</span>
+                    <img src="/assets/shapes/caret-down.svg" alt="caret-down">
+                </button>
+                <div class="accordion-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odit laboriosam nam sed possimus? Voluptate non exercitationem quam saepe corrupti!
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button onclick="this.nextElementSibling.classList.toggle('expand'); this.classList.toggle('active'); this.querySelector('img').classList.toggle('rotate')">
+                    <span>Where is your company located? Do you operate internationally?</span>
+                    <img src="/assets/shapes/caret-down.svg" alt="caret-down">
+                </button>
+                <div class="accordion-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odit laboriosam nam sed possimus? Voluptate non exercitationem quam saepe corrupti!
+                </div>
+            </div>
         </div>
     </section>
 
