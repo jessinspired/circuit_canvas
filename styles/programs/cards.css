@@ -30,7 +30,7 @@
     height: 100%;
 }
 
-.program-card > :nth-child(4) > * {
+.program-card > :nth-child(4) > *:not(.card-modal) {
     border: none;
     outline: none;
     padding: 1rem 1rem;
@@ -44,8 +44,9 @@
     color: white;
 }
 
-.program-card > :nth-child(4) > :last-child {
+.program-card > :nth-child(4) > :nth-child(2) {
     color: var(--purple-2);
+    cursor: pointer;
 }
 
 .program-card > *:not(:first-child) {
@@ -142,6 +143,45 @@
     background-color: var(--blue-1);
 }
 
+
+/* learn more modal */
+.card-modal {
+    min-height: 90vh;
+    width: min(45rem, 90vw);
+    border-radius: .5rem;
+    border: none;
+    background-color: var(--gray-3);
+}
+
+.card-modal > * {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.card-modal > :nth-child(2) {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.card-info {
+    display: grid;
+    row-gap: 3rem;
+
+}
+
+.card-modal header {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.card-modal h2 {
+    margin-bottom: 1rem;
+}
 
 
 /* media queries */

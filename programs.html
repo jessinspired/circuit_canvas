@@ -69,7 +69,7 @@
     </section>
 
     <section id="program-cards-section" class="program-cards-section">
-        <div class="program-card" role="card">
+        <div class="program-card" role="contentinfo">
             <div>
                 <img src="/assets/programs/smart-girls-program.png" alt="smart-girls">
             </div>
@@ -83,7 +83,100 @@
             <div>
                 <button>Join the program</button>
 
-                <button>Learn more</button>
+                <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+
+                <dialog class="card-modal" role="dialog">
+                    <button onclick="this.parentElement.close()">X</button>
+                    <div class="content">
+                        <div>
+                            <div class="gallery"></div>
+                        </div>
+
+                        <header>
+                            <div>
+                                <h1>Smart Girls Tech Club</h1>
+                                <p>Starting 18th May, 2025</p>
+                                <div>
+                                    <span>Tech program</span>
+                                    <span>15-18 years</span>
+                                    <span>SDGs</span>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#">Get in touch</a>
+                                <a href="#">Start a free trial</a>
+                            </div>
+                        </header>
+
+                        <div role="contentinfo" class="card-info">
+                            <div>
+                                <h2>Program Description</h2>
+
+                                <p>
+                                    The program provides girls with a safe environment to be mentored, support each other as they learn, as well as  provide the platform to network with millions of girls across the world that are using technology to solve problems they care about.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2>This program is for ..</h2>
+                                <p>High school girls who are</p>
+                                <ul>
+                                    <li>Innovative</li>
+                                    <li>Creative</li>
+                                    <li>Determined to TAKE ACTION</li>
+                                    <li>Ready to showcase affordable, innovative technology solutions to solve SDGs in their community.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Eligibility Criteria</h2>
+                                <p>Must be in High School when applying for the
+                                    program.</p>
+                            </div>
+
+                            <div>
+                                <h2>Resources you need for this program</h2>
+                                <ul>
+                                    <li>A Laptop or tablet. </li>
+                                    <li>A pair of headphones</li>
+                                </ul>
+                                <p>*Exercises require a computer with
+                                    internet access</p>
+                            </div>
+                            <div>
+                                <h2>Schedule</h2>
+
+                                <div>
+                                    Date: Saturdays<br>
+                                    Time: 12pm - 2pm<br>
+                                    Location: Edinburgh
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Benefits of the course</h2>
+                                <ul>
+                                    <li>Participants will learn the fundamentals of Computer Science</li>
+                                    <li>Work on assignments in teams to create technology based impact projects that will address the SDG GOAL problems in their immediate communities.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Activities</h2>
+                                <ul>
+                                    <li>Tech Class</li>
+                                    <li>Educational Tours</li>
+                                    <li>Demo Day </li>
+                                    <li>Global Tournaments</li>
+                                </ul>
+                            </div>
+
+                            <a href="#">Sponsor a girl in your community</a>
+
+                            <button>Join the program</button>
+                        </div>
+                    </div>
+                </dialog>
             </div>
 
             <img class="odd-stroke" src="/assets/strokes/smart-girls-stroke.svg" alt="stroke">
