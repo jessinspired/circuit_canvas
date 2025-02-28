@@ -91,6 +91,33 @@
     row-gap: 2rem;
 }
 
+.nav-card > * {
+    color: var(--gray-1);
+}
+
+.nav-card > :nth-child(5) {
+    color: var(--pink-1);
+    border: 1px solid var(--pink-1);
+    background-color: white;
+    width: 12rem;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    outline: none;
+}
+
+.nav-card > :nth-child(6) {
+    color: white;
+    background-color: var(--pink-1);
+    padding: 1rem 1.5rem;
+    width: 12rem;
+    text-align: center;
+    border-radius: 2rem;
+    outline: none;
+}
+
+
+
 /* .nav-card > :first-child {
     justify-self: right;
     font-size: 2rem;
