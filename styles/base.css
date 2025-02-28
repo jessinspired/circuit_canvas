@@ -32,6 +32,7 @@
 
     --orange-1: #FFF1E6;
     --orange-2: #FE7600;
+    --orange-3: #FE9133;
 
     --blue-1: #00ABFD;
     --blue-2: #E6F7FF;
@@ -58,6 +59,7 @@
     font-optical-sizing: auto;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: var(--lexend-regular);
 }
 
 p, h1, h2, h3, h4, h5, h6 {
