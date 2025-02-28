@@ -146,16 +146,16 @@
 
 /* learn more modal */
 .card-modal {
-    min-height: 90vh;
+    min-height: 100vh;
     width: min(45rem, 90vw);
-    border-radius: .5rem;
+    /* border-radius: .5rem; */
     border: none;
     background-color: var(--gray-3);
 }
 
 .card-modal > * {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: clamp(1rem, 3vw, 2rem);
+    padding-right: clamp(1rem, 3vw, 2rem);
 }
 
 .card-modal > :nth-child(2) {
