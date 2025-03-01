@@ -6,7 +6,7 @@
 
 .cta-mosaic {
     display: grid;
-    grid-auto-rows: 20rem;
+    grid-auto-rows: 22rem;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -16,9 +16,34 @@
 
 .cta-mosaic > * {
     padding: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-mosaic img {
+    width: 100%;
+    --img-width: 100%;
+    position: absolute;
+    bottom: -1.7rem;
+    left: calc((100% - var(--img-width)) / 2);
+    height: 100%;
+}
+
+.cta-mosaic > :nth-child(5) img {
+    /* --img-width: min(15rem, 100%); */
+    left: calc((100% - 12rem) / 2);
+    width: 12rem;
+}
+
+.cta-mosaic > * > *:not(img) {
+    z-index: var(--index-two);
 }
 
 
+
+
+
+/* children */
 .cta-mosaic > :nth-child(1) {
     background-color: var(--orange-2);
     display: grid;
