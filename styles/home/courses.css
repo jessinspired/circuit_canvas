@@ -46,3 +46,92 @@
     max-width: 30rem;
     color: var(--gray-2);
 }
+
+
+
+.course-card {
+    display: grid;
+    border: 1px solid var(--gray-4);
+    border-radius: 2rem;
+    width: min(22rem, 100%);
+    overflow: hidden;
+    padding-bottom: 3rem;
+}
+
+.course-card img {
+    width: 100%;
+}
+
+.course-card > *:not(img) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.course-card > :nth-child(2) {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    width: 100%;
+    overflow-x: auto;
+    margin: 0;
+    margin-top: 1rem;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    cursor:grab;
+}
+
+.course-card > :nth-child(2) > * {
+    width: max-content;
+    flex-shrink: 0;
+    font-size: .7rem;
+    padding: .2rem 1rem;
+    font-family: var(--lexend-semibold);
+}
+.course-card > :nth-child(2) > :nth-child(1) {
+    border: 1px solid var(--purple-1);
+    width: max-content;
+    border-radius: 2rem;
+    color: var(--purple-1);
+}
+.course-card > :nth-child(2) > :nth-child(2) {
+    background-color: var(--pink-3);
+    color: var(--pink-800);
+    border-radius: .2rem;
+}
+.course-card > :nth-child(2) > :nth-child(3) {
+    background-color: var(--green-50);
+    color: var(--green-800);
+    border-radius: .2rem;
+}
+
+
+
+.course-card > :nth-child(3) {
+    display: grid;
+    row-gap: .5rem;
+    margin-top: 1rem;
+}
+
+.course-card > :last-child {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin-top: 3rem;
+}
+
+.course-card > :last-child > * {
+    padding: .5rem 1rem;
+}
+
+.course-card > :last-child > :first-child {
+    background-color: var(--purple-1);
+    color: white;
+    border-radius: 2rem;
+}
+
+.course-card > :last-child > :last-child {
+    text-decoration: none;
+    color: var(--purple-1);
+}
