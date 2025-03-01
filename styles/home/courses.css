@@ -58,6 +58,26 @@
     padding-bottom: 3rem;
 }
 
+.courses-scroll {
+    margin-top: 4rem;
+    display: flex;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    overflow-x: hidden;
+}
+
+.courses-scroll > * {
+    flex-shrink: 0;
+}
+
+.course-card h2 {
+    font-size: 1.1rem;
+}
+
+.course-card article p {
+    font-size: .9rem;
+}
+
 .course-card img {
     width: 100%;
 }
