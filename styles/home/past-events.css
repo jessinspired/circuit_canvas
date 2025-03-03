@@ -113,3 +113,13 @@
     left: -1rem;
     width: clamp(4rem, 15vw, 8rem);
 }
+
+
+
+/* media queries */
+@media screen and (max-width: 520px) {
+    .past-events article {
+        justify-items: center;
+        text-align: center;
+    }
+}
