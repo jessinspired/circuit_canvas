@@ -40,7 +40,7 @@
     justify-content: center;
     background-color: var(--blue-500);
     margin-top: 2rem;
-    padding: 4rem clamp(.5rem, 2.5vw, 2rem);
+    padding: 4rem clamp(1rem, 2.5vw, 2rem);
     border-radius: 2rem;
     flex-wrap: wrap-reverse;
 }
