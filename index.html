@@ -12,12 +12,14 @@
 
     <link rel="stylesheet" href="styles/home/hero.css">
     <link rel="stylesheet" href="styles/home/courses.css">
+    <link rel="stylesheet" href="styles/home/past-events.css">
     <link rel="stylesheet" href="styles/home/contact.css">
     <link rel="stylesheet" href="styles/home/faq.css">
     <link rel="stylesheet" href="styles/home/cta-mosaic.css">
 
 
-    <script src="/scripts/components/courseCard.js"></script>
+    <script src="/scripts/components/courseCard.js" defer></script>
+    <script src="/scripts/home/pastEvents.js" defer></script>
 
     <title>Circuit Canvas</title>
 </head>
@@ -176,6 +178,37 @@
                     <button>Get started</button>
                     <a href="#">Learn more</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="past-events" class="past-events">
+        <h1>past events</h1>
+
+        <div>
+            <article>
+                <h2>Imaginnovation 2023</h2>
+
+                <p>
+                    Our 2-week in-person and virtual creative Summer Camp centred on Science, Technology, Entrepreneurship/Financial Literacy, Art, and Meta Skills.
+                </p>
+
+                <a href="/programs.html">Enroll into a program</a>
+            </article>
+
+            <div class="past-events-video-container">
+                <video class="past-event-video" src="/assets/home/az_recorder_20250128_132808.mp4">
+                </video>
+                <p>17th - 29th July.</p>
+
+                <button onclick="document.querySelector('.past-event-video').play()">
+                    <img src="/assets/home/play-ash.svg" alt="play-button">
+                </button>
+
+                <img src="/assets/home/innovate-star.svg" alt="star">
+
+                <img src="/assets/home/create.svg" alt="create">
+                <img src="/assets/home/imagine.svg" alt="imagine">
             </div>
         </div>
     </section>

@@ -1,4 +1,5 @@
 .cta-section {
+    margin-top: 5rem;
     display: grid;
     row-gap: 2rem;
     padding: 0;
@@ -86,7 +87,7 @@
 }
 
 .cta-mosaic > :nth-child(4) {
-    background-color: var(--blue-1);
+    background-color: var(--blue-500);
     display: grid;
 }
 .cta-mosaic > :nth-child(4) > :nth-child(1) {
