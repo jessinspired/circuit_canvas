@@ -30,6 +30,7 @@
     border: 1px solid var(--purple-1);
     padding: .2rem 1rem;
     border-radius: 2rem;
+    font-size: .8rem;
 }
 
 .courses-section h2 {
@@ -114,7 +115,7 @@
     color: var(--purple-1);
 }
 .course-card > :nth-child(2) > :nth-child(2) {
-    background-color: var(--pink-3);
+    background-color: var(--pink-50);
     color: var(--pink-800);
     border-radius: .2rem;
 }
