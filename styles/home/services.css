@@ -4,6 +4,7 @@
     background-color: var(--green-700);
     display: grid;
     row-gap: 2rem;
+    display: none;
 }
 
 .services header {
