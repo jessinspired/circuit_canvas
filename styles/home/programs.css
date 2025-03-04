@@ -209,7 +209,7 @@
     top: -2rem;
     opacity: 1;
     left: -2rem;
-    width: clamp(4rem, 10vw, 5rem);
+    width: clamp(3rem, 8vw, 5rem);
 }
 
 
@@ -228,6 +228,12 @@
 
     .program-image-container {
         height: 20rem;
+    }
+
+    .program-image-container > :nth-child(2) {
+        left: -1rem;
+        top: -1rem;
+
     }
 }
 
