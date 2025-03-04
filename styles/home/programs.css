@@ -129,7 +129,6 @@
 
 .program-info-container > :nth-child(2) {
     display: none;
-
 }
 
 .program-info-container > :nth-child(2) > :first-child {
@@ -236,6 +235,10 @@
         left: -1rem;
         top: -1rem;
 
+    }
+
+    .program-info-container > :nth-child(2) {
+        justify-content: center;
     }
 }
 
