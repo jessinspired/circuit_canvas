@@ -139,6 +139,7 @@
     padding: .8rem 1.5rem;
     border-radius: 2rem;
     text-align: center;
+    font-size: .8rem;
 }
 
 .program-info-container > :nth-child(2) > :nth-child(2) {
@@ -147,6 +148,7 @@
     padding: .8rem 1.5rem;
     border-radius: 2rem;
     text-align: center;
+    font-size: .8rem;
 }
 
 
@@ -243,5 +245,11 @@
         flex-wrap: nowrap;
         overflow: scroll;
         justify-content: left;
+    }
+
+    .program-info-container > :nth-child(2) > :first-child,
+    .program-info-container > :nth-child(2) > :nth-child(2)
+    {
+        font-size: .6rem;
     }
 }
