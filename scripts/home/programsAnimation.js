@@ -1,43 +1,59 @@
 function initProgramsAnimation() {
-  const buttons = document.querySelectorAll(".program-btns-container button");
-  const progressBar = document.querySelector(".program-progress-bar");
+    const buttons = document.querySelectorAll(".program-btns-container button");
+    const progressBar = document.querySelector(".program-progress-bar");
+    let index = 0;
+    const duration = 8000; // 8 seconds
+    let interval;
 
-  let index = 0;
-  const duration = 8000;
+    function activateButtonAtIndex(newIndex) {
+      // Remove 'active' class from current button and slide
+      document.querySelector(".program-btns-container button.active")?.classList.remove("active");
+      document.querySelector(".program-slide.active")?.classList.remove("active");
 
-  function activateNextButton() {
-    // Remove 'active' class from the current button
-    buttons[index].classList.remove("active");
+      // Update index and set new active button
+      index = newIndex;
+      const newActiveButton = buttons[index];
+      newActiveButton.classList.add("active");
 
-    // Move to the next button, looping back to the start if needed
-    index = (index + 1) % buttons.length;
+      // Get corresponding slide based on data-program
+      let currentProgram = newActiveButton.getAttribute("data-program");
+      let updatedSlide = document.querySelector(`.program-slide[data-program="${currentProgram}"]`);
+      if (updatedSlide) {
+        updatedSlide.classList.add("active");
+      }
 
-    const newActiveButton = buttons[index];
-    newActiveButton.classList.add("active");
-
-    // Get the associated program name from data-program
-
-    document.querySelector(".program-slide.active").classList.remove("active");
-
-    let currentProgram = newActiveButton.getAttribute("data-program");
-    // Find the corresponding program slide and add 'active' class
-    let updatedSlide = document.querySelector(
-      `.program-slide[data-program="${currentProgram}"]`
-    );
-    if (updatedSlide) {
-      updatedSlide.classList.add("active");
+      // Reset and restart progress bar animation
+      progressBar.style.animation = "none";
+      void progressBar.offsetWidth; // Force reflow to restart animation
+      progressBar.style.animation = `fillUp ${duration / 1000}s linear infinite`;
     }
 
-    // Restart the animation
-    progressBar.style.animation = "none";
-    void progressBar.offsetWidth; // Forces reflow to restart animation
-    progressBar.style.animation = `fillUp ${duration / 1000}s linear infinite`;
+    function activateNextButton() {
+      let newIndex = (index + 1) % buttons.length;
+      activateButtonAtIndex(newIndex);
+    }
+
+    function startAutoCycle() {
+      interval = setInterval(activateNextButton, duration);
+    }
+
+    function stopAutoCycle() {
+      clearInterval(interval);
+    }
+
+    // Start automatic cycling
+    startAutoCycle();
+
+    // Add event listeners for manual button clicks
+    buttons.forEach((button, btnIndex) => {
+      button.addEventListener("click", () => {
+        stopAutoCycle(); // Stop automatic cycling
+        activateButtonAtIndex(btnIndex); // Activate the clicked button
+        startAutoCycle(); // Continue from clicked button
+      });
+    });
   }
 
-  // Run the function every 4 seconds
-  setInterval(activateNextButton, duration);
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  initProgramsAnimation();
-});
+  document.addEventListener("DOMContentLoaded", function () {
+    initProgramsAnimation();
+  });
