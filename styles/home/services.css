@@ -4,7 +4,6 @@
     background-color: var(--green-700);
     display: grid;
     row-gap: 2rem;
-    display: none;
 }
 
 .services header {
@@ -39,9 +38,9 @@
 .services-card-container > * {
     text-align: center;
     color: white;
-    width: min(22rem, 100%);
+    /* width: min(22rem, 100%); */
 }
 
 .services-card-container > img {
-    width: 100%;
+    /* width: 100%; */
 }
