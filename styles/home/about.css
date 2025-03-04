@@ -35,7 +35,7 @@
     width: min(40rem, 100%);
     display: grid;
     align-items: center;
-    padding: 1rem;
+    padding: 10rem 1rem;
     row-gap: 2rem;
 }
 
