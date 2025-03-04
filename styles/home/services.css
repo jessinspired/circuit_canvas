@@ -27,7 +27,7 @@
     color: white;
 }
 
-.services > :nth-child(2) {
+.services-card-container {
     display: flex;
     justify-content: space-evenly;
     row-gap: 2rem;
@@ -35,7 +35,12 @@
     flex-wrap: wrap;
 }
 
-.services > :nth-child(2) > * {
+.services-card-container > * {
     text-align: center;
     color: white;
+    width: min(22rem, 100%);
+}
+
+.services-card-container > img {
+    width: 100%;
 }
