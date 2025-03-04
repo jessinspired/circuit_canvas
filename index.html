@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/home/hero.css">
     <link rel="stylesheet" href="styles/home/about.css">
     <link rel="stylesheet" href="styles/home/services.css">
+    <link rel="stylesheet" href="styles/home/programs.css">
     <link rel="stylesheet" href="styles/home/courses.css">
     <link rel="stylesheet" href="styles/home/past-events.css">
     <link rel="stylesheet" href="styles/home/contact.css">
@@ -22,6 +23,7 @@
 
     <script src="/scripts/components/courseCard.js" defer></script>
     <script src="/scripts/home/pastEvents.js" defer></script>
+    <script src="/scripts/home/programsAnimation.js" defer></script>
 
     <title>Circuit Canvas</title>
 </head>
@@ -137,6 +139,124 @@
                 <p>Tailored classes</p>
             </div>
         </div>
+    </section>
+
+    <section id="programs" class="programs">
+        <header>
+            <h1>our programs</h1>
+
+            <h2>Ignite Creativity, Build Skills, Make Memories</h2>
+
+            <h3>Hands-on summer camps, holiday programs, and special events designed to spark innovation, teamwork, and fun.</h3>
+        </header>
+
+        <div class="program-btns-container">
+            <button class="active" data-program="smart-girls" >Smart girls tech club</button>
+            <button data-program="holiday-campus" >Holiday campus</button>
+            <button data-program="after-school" >Afterschool / Weekend programs</button>
+            <button data-program="international-exchange">International exchange program</button>
+            <button data-program="sage"> Entrepreneurial program (SAGE)</button>
+        </div>
+
+        <div class="program-animation-container">
+            <div class="program-slide-container">
+                <div data-program="smart-girls" class="program-slide active">
+                    <div class="program-image-container">
+                        <img src="/assets/home/hero-1.png" alt="smart-girls">
+                    </div>
+                    <div class="program-info-container">
+                        <article>
+                            <h4>Smart Girls Tech Club</h4>
+                            <p>
+                                A community based technopreneurship mentorship Program for teenage girls to empower and provide them with a strong foundation in ICT upon which to build their careers as computer programmers, developers,problem solvers, creative and become innovative techpreneurs.
+                            </p>
+                        </article>
+
+                        <div>
+                            <a href="#">Join the program</a>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-program="holiday-campus" class="program-slide">
+                    <div class="program-image-container">
+                        <img src="/assets/home/tech-bro.png" alt="holiday-campus">
+                    </div>
+                    <div class="program-info-container">
+                        <article>
+                            <h4>Holiday Campus</h4>
+                            <p>
+                                A holdayadklf based technopreneurship mentorship Program for teenage girls to empower and provide them with a strong foundation in ICT upon which to build their careers as computer programmers, developers,problem solvers, creative and become innovative techpreneurs.
+                            </p>
+                        </article>
+
+                        <div>
+                            <a href="#">Join the program</a>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-program="after-school" class="program-slide">
+                    <div class="program-image-container">
+                        <img src="/assets/home/tech-bro.png" alt="holiday-campus">
+                    </div>
+                    <div class="program-info-container">
+                        <article>
+                            <h4>Afterschool / Weekend programs</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, at iste necessitatibus, quae ut deleniti magnam in nam veritatis exercitationem debitis laboriosam ex vitae rerum repudiandae officia facere. Voluptates, blanditiis!
+                            </p>
+                        </article>
+
+                        <div>
+                            <a href="#">Join the program</a>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-program="international-exchange" class="program-slide">
+                    <div class="program-image-container">
+                        <img src="/assets/home/tech-bro.png" alt="holiday-campus">
+                    </div>
+                    <div class="program-info-container">
+                        <article>
+                            <h4>International Exchange Program</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem officiis architecto sed repudiandae ipsam quis omnis eum laborum, molestiae cumque quasi, earum optio totam dignissimos nam sapiente ullam quos.
+                            </p>
+                        </article>
+
+                        <div>
+                            <a href="#">Join the program</a>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-program="sage" class="program-slide">
+                    <div class="program-image-container">
+                        <img src="/assets/home/tech-bro.png" alt="holiday-campus">
+                    </div>
+                    <div class="program-info-container">
+                        <article>
+                            <h4>Entrepreneurial Program (SAGE)</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eius consequatur illum impedit? Placeat ipsa numquam, pariatur veritatis ipsam iusto maiores, culpa ut a facere dolorem odit quae corrupti est.
+                            </p>
+                        </article>
+
+                        <div>
+                            <a href="#">Join the program</a>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertical-loader">
+                <div class="program-progress-bar"></div>
+            </div>
+        </div>
+
     </section>
 
     <section id="courses-section" class="courses-section">
