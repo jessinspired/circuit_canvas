@@ -1,0 +1,41 @@
+.services {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--green-700);
+    display: grid;
+    row-gap: 2rem;
+}
+
+.services header {
+    text-align: center;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.services h1 {
+    background-color: white;
+    width: max-content;
+    padding: .2rem 1rem;
+    color: var(--green-700);
+    font-family: var(--lexend-semibold);
+    border-radius: .4rem;
+    font-size: .8rem;
+    justify-self: center;
+}
+
+.services h2 {
+    color: white;
+}
+
+.services > :nth-child(2) {
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.services > :nth-child(2) > * {
+    text-align: center;
+    color: white;
+}

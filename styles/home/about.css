@@ -33,7 +33,6 @@
 
 .about > :nth-child(2) {
     width: min(40rem, 100%);
-    outline: 1px solid brown;
     display: grid;
     align-items: center;
     padding: 1rem;
