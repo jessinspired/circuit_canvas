@@ -3,6 +3,7 @@
     display: grid;
     row-gap: 2rem;
     padding: 0;
+    display: none;
 }
 
 .cta-mosaic {
