@@ -7,7 +7,7 @@
 
 .cta-mosaic {
     display: grid;
-    grid-auto-rows: 22rem;
+    grid-auto-rows: 24rem;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -69,6 +69,7 @@
 .cta-mosaic > :nth-child(2) {
     background-color: var(--pink-6);
     display: grid;
+    background: url(/assets/home/pink-pattern.svg);
 }
 .cta-mosaic > :nth-child(2) > :nth-child(1) {
     color: var(--pink-5);
@@ -89,6 +90,9 @@
 .cta-mosaic > :nth-child(4) {
     background-color: var(--blue-500);
     display: grid;
+    background: url(/assets/home/blue-pattern.svg) no-repeat;
+    background-position: 30% 70%;
+    background-size: cover;
 }
 .cta-mosaic > :nth-child(4) > :nth-child(1) {
     color: var(--blue-2);
@@ -140,6 +144,7 @@
 .cta-mosaic > :nth-child(8) {
     background-color: var(--orange-3);
     display: grid;
+    background: url(/assets/home/orange-pattern.svg);
 }
 .cta-mosaic > :nth-child(8) > :nth-child(1) {
     color: var(--orange-1);
