@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     background-color: var(--pink-50);
+    position: relative;
+    overflow: hidden;
 }
 
 .about header {
@@ -52,6 +54,19 @@
 .about > article > :nth-child(3) > :nth-child(3) {
     color: var(--pink-800);
     font-family: var(--lexend-semibold);
+}
+
+.overlay-curve {
+    position: absolute;
+    width: 100%;
+    min-width: 30rem;
+}
+
+.about > :nth-child(3) {
+    top: 0;
+}
+.about > :nth-child(4) {
+    bottom: -1.35rem;
 }
 
 

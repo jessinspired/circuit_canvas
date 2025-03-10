@@ -10,37 +10,37 @@
     --black-1: #3B3B3B;
     --black-2: #4A4A4A;
 
-    --purple-1: #2E1562;
+    --purple-500: #2E1562;
     --purple-900: #130929;
     --purple-3: #736296;
+    --purple-50: #EAE8EF;
 
     --pink-1: #F45B7D;
     --pink-800: #851C33;
     --pink-50: #FEEBEF;
-    --pink-4: #DB2E55;
+    --pink-600: #DB2E55;
     --pink-5: #F1325D;
     --pink-6: #F9A1B4;
 
     --yellow-1: #FFFAE7;
-    --yellow-2: #FEF1B6;
-    --yellow-3: #6A5808;
+    --yellow-100: #FEF1B6;
+    --yellow-900: #6A5808;
     --yellow-4: #FDDA42;
     --yellow-500: #FCD113;
     --yellow-6: #6B3200;
 
-    --green-1: #00A56D;
+    --green-600: #00A56D;
     --green-50: #E6F8F2;
     --green-700: #008155;
     --green-800: #006442;
-
 
     --orange-1: #FFF1E6;
     --orange-2: #FE7600;
     --orange-3: #FE9133;
 
     --blue-500: #00ABFD;
-    --blue-2: #E6F7FF;
-    --blue-3: #005E8B;
+    --blue-50: #E6F7FF;
+    --blue-800: #005E8B;
 
     /* font families */
     --lexend-regular: 'lexend-regular';

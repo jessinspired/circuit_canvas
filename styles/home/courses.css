@@ -6,10 +6,10 @@
 }
 
 .courses-section > :first-child {
-    background-color: var(--yellow-2);
+    background-color: var(--yellow-100);
     width: max-content;
     padding: .2rem 1rem;
-    color: var(--yellow-3);
+    color: var(--yellow-900);
     font-family: var(--lexend-semibold);
     border-radius: .4rem;
 }
@@ -25,9 +25,9 @@
 }
 
 .courses-section > :nth-child(2) > :last-child {
-    color: var(--purple-1);
+    color: var(--purple-500);
     text-decoration: none;
-    border: 1px solid var(--purple-1);
+    border: 1px solid var(--purple-500);
     padding: .2rem 1rem;
     border-radius: 2rem;
     font-size: .8rem;
@@ -109,10 +109,10 @@
     font-family: var(--lexend-semibold);
 }
 .course-card > :nth-child(2) > :nth-child(1) {
-    border: 1px solid var(--purple-1);
+    border: 1px solid var(--purple-500);
     width: max-content;
     border-radius: 2rem;
-    color: var(--purple-1);
+    color: var(--purple-500);
 }
 .course-card > :nth-child(2) > :nth-child(2) {
     background-color: var(--pink-50);
@@ -147,12 +147,12 @@
 }
 
 .course-card > :last-child > :first-child {
-    background-color: var(--purple-1);
+    background-color: var(--purple-500);
     color: white;
     border-radius: 2rem;
 }
 
 .course-card > :last-child > :last-child {
     text-decoration: none;
-    color: var(--purple-1);
+    color: var(--purple-500);
 }

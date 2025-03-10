@@ -126,7 +126,7 @@
 
 /* individual cards */
 .program-cards-section > :first-child {
-    background-color: var(--pink-4);
+    background-color: var(--pink-600);
 }
 
 .program-cards-section > :nth-child(2) {
@@ -134,7 +134,7 @@
 }
 
 .program-cards-section > :nth-child(3) {
-    background-color: var(--green-1);
+    background-color: var(--green-600);
 }
 .program-cards-section > :nth-child(4) {
     background-color: var(--purple-3);
