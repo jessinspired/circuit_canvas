@@ -35,6 +35,6 @@ searchInput.addEventListener("input", () => {
   } else {
     // Show "No Results" when nothing matches
     coursesCategory.style.display = "none";
-    noResultDisplay.style.display = "block";
+    noResultDisplay.style.display = "grid";
   }
 });

@@ -55,7 +55,7 @@ body {
 }
 
 .courses-search::placeholder {
-    color: var(--gray-5);
+    color: var(--b70);
 }
 
 

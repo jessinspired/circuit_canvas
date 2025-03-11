@@ -18,4 +18,19 @@
 
 .no-result-display {
     display: none;
+    text-align: center;
+    row-gap: 2rem;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+}
+
+.no-result-display h1 {
+    color: var(--b600);
+}
+
+.no-result-display p {
+    color: var(--b70);
+    width: min(40rem, 100%);
 }
