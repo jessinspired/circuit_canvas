@@ -3,46 +3,84 @@ const articles = document.querySelectorAll(
 );
 const images = document.querySelectorAll(".testimonial-images img");
 const progressBar = document.querySelector(".testimonial-progress-bar div");
+const prevBtn = document.querySelector(
+  ".testimonial-toggle-btns-container button:first-child"
+);
+const nextBtn = document.querySelector(
+  ".testimonial-toggle-btns-container button:last-child"
+);
 
 let currentIndex = 0;
 const totalSlides = articles.length;
 const intervalTime = 3000; // 3 seconds
+let intervalId;
 
 // Calculate bar height dynamically
-const progressBarContainer = document.querySelector(
-  ".testimonial-progress-bar"
-);
-const progressBarHeight = 100 / totalSlides; // Bar height proportional to slides
+const progressBarHeight = 100 / totalSlides;
+progressBar.style.height = `${progressBarHeight}%`;
 
-progressBar.style.height = `${progressBarHeight}%`; // Set the height dynamically
-
-function changeSlide() {
+function updateSlide(index) {
   // Remove active class from current article and image
   articles[currentIndex].classList.remove("active");
   images[currentIndex].classList.remove("active");
 
-  // Move to the next index
-  currentIndex = (currentIndex + 1) % totalSlides;
+  // Update index
+  currentIndex = index;
 
   // Add active class to new article and image
   articles[currentIndex].classList.add("active");
   images[currentIndex].classList.add("active");
 
-  // Move progress bar down
+  // Move progress bar
   const step = currentIndex * progressBarHeight;
+  progressBar.style.transition = "top 0.7s ease-in-out";
   progressBar.style.top = `${step}%`;
 
-  // Reset animation when it reaches the last
+  // Reset animation when reaching the first slide
   if (currentIndex === 0) {
     setTimeout(() => {
       progressBar.style.transition = "none";
       progressBar.style.top = "0";
       setTimeout(
         () => (progressBar.style.transition = "top 0.7s ease-in-out"),
-        50
+        100
       );
     }, 700);
   }
 }
 
-setInterval(changeSlide, intervalTime);
+// Auto-slide function
+function changeSlide() {
+  updateSlide((currentIndex + 1) % totalSlides);
+}
+
+// Start auto-slide
+function startSlider() {
+  intervalId = setInterval(changeSlide, intervalTime);
+}
+
+// Manual controls
+nextBtn.addEventListener("click", () => {
+  clearInterval(intervalId);
+  updateSlide((currentIndex + 1) % totalSlides);
+  startSlider();
+});
+
+prevBtn.addEventListener("click", () => {
+  clearInterval(intervalId);
+  updateSlide((currentIndex - 1 + totalSlides) % totalSlides);
+  startSlider();
+});
+
+// Pause auto-slide on hover
+document
+  .querySelector(".testimonial-slider-container")
+  .addEventListener("mouseenter", () => {
+    clearInterval(intervalId);
+  });
+document
+  .querySelector(".testimonial-slider-container")
+  .addEventListener("mouseleave", startSlider);
+
+// Initialize slider
+startSlider();

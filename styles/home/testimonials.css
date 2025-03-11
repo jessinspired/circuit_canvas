@@ -101,3 +101,22 @@
     right: clamp(-5.8rem, 10vw, -4rem);
     width: clamp(10rem, 20vw, 20rem);
 }
+
+
+
+
+.testimonial-toggle-btns-container {
+    margin-top: 2rem;
+    justify-self: center;
+    display: flex;
+    column-gap: 2rem;
+}
+
+.testimonial-toggle-btns-container > * {
+    background-color: transparent;
+    width: 2.5rem;
+}
+
+.testimonial-toggle-btns-container img {
+    width: 100%;
+}
