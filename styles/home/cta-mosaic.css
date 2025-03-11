@@ -56,7 +56,7 @@
 }
 .cta-mosaic > :nth-child(1) > :nth-child(2) {
     background-color: var(--yellow-4);
-    color: var(--yellow-6);
+    color: var(--orange-900);
     border: none;
     padding: 1rem;
     border-radius: 2rem;

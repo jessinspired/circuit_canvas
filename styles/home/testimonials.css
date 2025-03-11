@@ -1,3 +1,103 @@
 .testimonials {
+    padding-top: 5rem;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+
+.testimonials h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonial-progress-bar {
+    height: 12rem;
+    width: .8rem;
+    border-radius: .5rem;
+    background-color: var(--b20);
+    position: relative;
+}
+
+.testimonial-progress-bar > * {
+    background-color: var(--orange-900);
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 0;
+    transition: top 0.7s ease-in-out;
+    border-radius: inherit;
+}
+
+.testimonial-slider-container {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    row-gap: 2.5rem;
+}
+
+
+.testimonial-article-container {
+    display: grid;
+}
+.testimonial-article-container > * {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: grid;
+    row-gap: 1rem;
+    opacity: 0;
+    transition: .4s ease-in-out;
+    z-index: var(--negative-one);
+}
+
+
+.testimonial-article-container article.active {
+    opacity: 1;
+    z-index: var(--index-two);
+    transition: .4s ease-in-out;
+}
+
+.testimonial-slider-container > :first-child {
+    width: min(30rem, 100%);
+}
+
+.testimonial-slider-container > :first-child > :first-child {
+    width: clamp(2rem, 8vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.testimonial-slider-container > :first-child > :nth-child(2) {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+
+
+.testimonial-slider-container > :nth-child(2) {
+    position: relative;
+    height: 26rem;
+}
+
+.testimonial-images {
+    height: 99%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.testimonial-images img {
+    height: 100%;
+    width: 100%;
     display: none;
+}
+
+.testimonial-images img.active {
+    display: block;
+}
+
+.testimonial-slider-container > :nth-child(2) > :nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    right: clamp(-5.8rem, 10vw, -4rem);
+    width: clamp(10rem, 20vw, 20rem);
 }

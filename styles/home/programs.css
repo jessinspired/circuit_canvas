@@ -212,7 +212,7 @@
 .vertical-loader {
     width: 1.5rem;
     height: 60%;
-    background-color: var(--gray-6);
+    background-color: var(--b20);
     align-self: center;
     border-radius: .5rem;
     position: relative;
