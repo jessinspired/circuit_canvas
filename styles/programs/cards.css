@@ -146,7 +146,7 @@
 
 /* learn more modal */
 .card-modal {
-    min-height: 100vh;
+    min-height: 100dvh;
     width: min(45rem, 90vw);
     /* border-radius: .5rem; */
     border: none;
