@@ -86,7 +86,7 @@
                 <button onclick="this.nextElementSibling.showModal()">Learn more</button>
 
                 <dialog class="card-modal" role="dialog">
-                    <button onclick="this.parentElement.close()">X</button>
+                    <button class="close-program-modal-btn" onclick="this.parentElement.close()">X</button>
                     <div class="content">
                         <div>
                             <div class="gallery"></div>
@@ -96,13 +96,13 @@
                             <div>
                                 <h1>Smart Girls Tech Club</h1>
                                 <p>Starting 18th May, 2025</p>
-                                <div>
+                                <div class="program-meta-data">
                                     <span>Tech program</span>
                                     <span>15-18 years</span>
                                     <span>SDGs</span>
                                 </div>
                             </div>
-                            <div>
+                            <div class="header-cta-parent">
                                 <a href="#">Get in touch</a>
                                 <a href="#">Start a free trial</a>
                             </div>
@@ -147,9 +147,9 @@
                                 <h2>Schedule</h2>
 
                                 <div>
-                                    Date: Saturdays<br>
-                                    Time: 12pm - 2pm<br>
-                                    Location: Edinburgh
+                                    <p>Date: Saturdays</p>
+                                    <p>Time: 12pm - 2pm</p>
+                                    <p>Location: Edinburgh</p>
                                 </div>
                             </div>
 
@@ -173,7 +173,9 @@
 
                             <a href="#">Sponsor a girl in your community</a>
 
-                            <button>Join the program</button>
+                            <button class="">
+                                Join the program
+                            </button>
                         </div>
                     </div>
                 </dialog>
