@@ -37,6 +37,7 @@
     border-radius: 2rem;
     font-family: var(--lexend-semibold);
     z-index: var(--index-two);
+    font-size: .8rem;
 }
 
 .program-card > :nth-child(4) > :first-child {

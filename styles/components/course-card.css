@@ -24,6 +24,10 @@
     padding-left: 1rem;
 }
 
+.course-card > :nth-child(1) {
+    height: 10rem;
+}
+
 .course-card > :nth-child(2) {
     display: flex;
     align-items: center;
@@ -92,4 +96,18 @@
 .course-card > :last-child > :nth-child(2) {
     color: var(--purple-500);
     background-color: transparent;
+}
+
+
+.card-img-placeholder {
+    height: 10rem;
+    background-color: var(--pink-50);
+    color: var(--pink-800);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--lexend-semibold);
+    font-size: 1.5rem;
+    padding: .5rem;
+    text-align: center;
 }

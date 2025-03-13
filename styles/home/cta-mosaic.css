@@ -62,7 +62,9 @@
     border-radius: 2rem;
     font-family: var(--lexend-semibold);
     height: max-content;
-    width: min(15rem, 90%)
+    width: min(15rem, 90%);
+    text-decoration: none;
+    text-align: center;
 }
 
 
@@ -137,7 +139,9 @@
     border-radius: 2rem;
     font-family: var(--lexend-semibold);
     height: max-content;
-    width: min(15rem, 90%)
+    width: min(15rem, 90%);
+    background-color: white;
+    text-align: center;
 }
 
 
