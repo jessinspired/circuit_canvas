@@ -27,6 +27,8 @@
     <script src="/scripts/home/programsAnimation.js" defer></script>
     <script src="/scripts/components/testimonialSlider.js" defer></script>
 
+    <link rel="preload" href="/assets/home/immaginovation-poster.png" as="image" fetchpriority="high">
+
     <title>Circuit Canvas</title>
 </head>
 <body>
@@ -79,7 +81,7 @@
                 Gain a head start with hands-on STEAM learning. Engaging projects and a future-ready skillset await!
             </p>
 
-            <button>Begin your journey!</button>
+            <a href="/courses.html">Begin your journey!</a>
         </header>
 
         <div class="hero-image-container">
@@ -370,7 +372,11 @@
             </article>
 
             <div class="past-events-video-container">
-                <video class="past-event-video" src="/assets/videos/immaginovation-video.mp4"></video>
+                <video
+                poster="/assets/home/immaginovation-poster.png"
+                preload="none" class="past-event-video"
+                onmouseenter="event.target.setAttribute('preload','metadata')"
+                src="/assets/videos/immaginovation-video.mp4"></video>
                 <p>17th - 29th July.</p>
 
                 <button onclick="document.querySelector('.past-event-video').play()">
