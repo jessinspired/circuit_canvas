@@ -84,7 +84,7 @@
 
 .course-card > :last-child > * {
     padding: .5rem 1rem;
-    font-size: .8rem;
+    /* font-size: .8rem; */
 }
 
 .course-card > :last-child > :first-child {
@@ -92,11 +92,13 @@
     color: white;
     border-radius: 2rem;
     text-decoration: none;
+    font-size: .8rem;
 }
 
 .course-card > :last-child > :nth-child(2) {
     color: var(--purple-500);
     background-color: transparent;
+    font-size: .8rem;
 }
 
 
