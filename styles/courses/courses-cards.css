@@ -13,7 +13,7 @@
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .no-result-display {
