@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/courses/courses-cards.css">
     <link rel="stylesheet" href="styles/courses/become-a-tutor.css">
     <link rel="stylesheet" href="styles/components/course-card.css">
+    <link rel="stylesheet" href="styles/components/descriptionModal.css">
 
     <script src="scripts/courses/courseSearch.js" defer></script>
 
@@ -97,7 +98,96 @@
 
                     <div>
                         <button>Get started</button>
-                        <a href="#">Learn more</a>
+                        <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                        <dialog class="card-modal" role="dialog">
+                    <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                    <div class="content">
+                        <div>
+                            <div class="gallery"></div>
+                        </div>
+
+                        <header>
+                            <div>
+                                <h1>Robotics</h1>
+                                <p>Date: 13th Feb - 24th Mar, 2025</p>
+                                <div class="item-meta-data">
+                                    <span>online</span>
+                                    <span>15-18 years</span>
+                                    <span>SDGs</span>
+                                </div>
+                            </div>
+                            <div class="header-cta-parent">
+                                <a href="#">Get in touch</a>
+                                <a href="#">Start a free trial</a>
+                            </div>
+                        </header>
+
+                        <div role="contentinfo" class="card-info">
+                            <div>
+                                <h2>Course Description</h2>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A explicabo distinctio repellat maxime earum libero obcaecati, reprehenderit pariatur est, provident voluptates sint mollitia officia dolor animi fugiat doloremque saepe, alias modi ratione. Iure earum ducimus vel? Sit modi illo itaque.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2>This course is for ..</h2>
+                                <p>High school girls who are</p>
+                                <ul>
+                                    <li>Innovative</li>
+                                    <li>Creative</li>
+                                    <li>Determined to TAKE ACTION</li>
+                                    <li>Ready to showcase affordable, innovative technology solutions to solve SDGs in their community.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Eligibility Criteria</h2>
+                                <p>Must be in High School when applying for the
+                                    program.</p>
+                            </div>
+
+                            <div>
+                                <h2>Resources you need for this program</h2>
+                                <ul>
+                                    <li>A Laptop or tablet. </li>
+                                    <li>A pair of headphones</li>
+                                </ul>
+                                <p>*Exercises require a computer with
+                                    internet access</p>
+                            </div>
+                            <div>
+                                <h2>Schedule</h2>
+
+                                <div>
+                                    <p>Date: Saturdays</p>
+                                    <p>Time: 12pm - 2pm</p>
+                                    <p>Location: Edinburgh</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Benefits of the course</h2>
+                                <ul>
+                                    <li>Participants will learn the fundamentals of Computer Science</li>
+                                    <li>Work on assignments in teams to create technology based impact projects that will address the SDG GOAL problems in their immediate communities.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Course curriculum</h2>
+
+                                <a href="#">Download the course curriculum from here</a>
+                            </div>
+
+
+                            <button class="">
+                                Join the program
+                            </button>
+                        </div>
+                    </div>
+                </dialog>
                     </div>
                 </div>
                 <div data-keywords="chemistry science" class="course-card">
@@ -115,7 +205,101 @@
 
                     <div>
                         <button>Get started</button>
-                        <a href="#">Learn more</a>
+                        <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                        <dialog class="card-modal" role="dialog">
+                    <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                    <div class="content">
+                        <div>
+                            <div class="gallery"></div>
+                        </div>
+
+                        <header>
+                            <div>
+                                <h1>Smart Girls Tech Club</h1>
+                                <p>Starting 18th May, 2025</p>
+                                <div class="item-meta-data">
+                                    <span>Tech program</span>
+                                    <span>15-18 years</span>
+                                    <span>SDGs</span>
+                                </div>
+                            </div>
+                            <div class="header-cta-parent">
+                                <a href="#">Get in touch</a>
+                                <a href="#">Start a free trial</a>
+                            </div>
+                        </header>
+
+                        <div role="contentinfo" class="card-info">
+                            <div>
+                                <h2>Program Description</h2>
+
+                                <p>
+                                    The program provides girls with a safe environment to be mentored, support each other as they learn, as well as  provide the platform to network with millions of girls across the world that are using technology to solve problems they care about.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2>This program is for ..</h2>
+                                <p>High school girls who are</p>
+                                <ul>
+                                    <li>Innovative</li>
+                                    <li>Creative</li>
+                                    <li>Determined to TAKE ACTION</li>
+                                    <li>Ready to showcase affordable, innovative technology solutions to solve SDGs in their community.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Eligibility Criteria</h2>
+                                <p>Must be in High School when applying for the
+                                    program.</p>
+                            </div>
+
+                            <div>
+                                <h2>Resources you need for this program</h2>
+                                <ul>
+                                    <li>A Laptop or tablet. </li>
+                                    <li>A pair of headphones</li>
+                                </ul>
+                                <p>*Exercises require a computer with
+                                    internet access</p>
+                            </div>
+                            <div>
+                                <h2>Schedule</h2>
+
+                                <div>
+                                    <p>Date: Saturdays</p>
+                                    <p>Time: 12pm - 2pm</p>
+                                    <p>Location: Edinburgh</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Benefits of the course</h2>
+                                <ul>
+                                    <li>Participants will learn the fundamentals of Computer Science</li>
+                                    <li>Work on assignments in teams to create technology based impact projects that will address the SDG GOAL problems in their immediate communities.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Activities</h2>
+                                <ul>
+                                    <li>Tech Class</li>
+                                    <li>Educational Tours</li>
+                                    <li>Demo Day </li>
+                                    <li>Global Tournaments</li>
+                                </ul>
+                            </div>
+
+                            <a href="#">Sponsor a girl in your community</a>
+
+                            <button class="">
+                                Join the program
+                            </button>
+                        </div>
+                    </div>
+                </dialog>
                     </div>
                 </div>
                 <div data-keywords="physics science" class="course-card">
@@ -133,7 +317,101 @@
 
                     <div>
                         <button>Get started</button>
-                        <a href="#">Learn more</a>
+                        <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                        <dialog class="card-modal" role="dialog">
+                    <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                    <div class="content">
+                        <div>
+                            <div class="gallery"></div>
+                        </div>
+
+                        <header>
+                            <div>
+                                <h1>Smart Girls Tech Club</h1>
+                                <p>Starting 18th May, 2025</p>
+                                <div class="item-meta-data">
+                                    <span>Tech program</span>
+                                    <span>15-18 years</span>
+                                    <span>SDGs</span>
+                                </div>
+                            </div>
+                            <div class="header-cta-parent">
+                                <a href="#">Get in touch</a>
+                                <a href="#">Start a free trial</a>
+                            </div>
+                        </header>
+
+                        <div role="contentinfo" class="card-info">
+                            <div>
+                                <h2>Program Description</h2>
+
+                                <p>
+                                    The program provides girls with a safe environment to be mentored, support each other as they learn, as well as  provide the platform to network with millions of girls across the world that are using technology to solve problems they care about.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2>This program is for ..</h2>
+                                <p>High school girls who are</p>
+                                <ul>
+                                    <li>Innovative</li>
+                                    <li>Creative</li>
+                                    <li>Determined to TAKE ACTION</li>
+                                    <li>Ready to showcase affordable, innovative technology solutions to solve SDGs in their community.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Eligibility Criteria</h2>
+                                <p>Must be in High School when applying for the
+                                    program.</p>
+                            </div>
+
+                            <div>
+                                <h2>Resources you need for this program</h2>
+                                <ul>
+                                    <li>A Laptop or tablet. </li>
+                                    <li>A pair of headphones</li>
+                                </ul>
+                                <p>*Exercises require a computer with
+                                    internet access</p>
+                            </div>
+                            <div>
+                                <h2>Schedule</h2>
+
+                                <div>
+                                    <p>Date: Saturdays</p>
+                                    <p>Time: 12pm - 2pm</p>
+                                    <p>Location: Edinburgh</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Benefits of the course</h2>
+                                <ul>
+                                    <li>Participants will learn the fundamentals of Computer Science</li>
+                                    <li>Work on assignments in teams to create technology based impact projects that will address the SDG GOAL problems in their immediate communities.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Activities</h2>
+                                <ul>
+                                    <li>Tech Class</li>
+                                    <li>Educational Tours</li>
+                                    <li>Demo Day </li>
+                                    <li>Global Tournaments</li>
+                                </ul>
+                            </div>
+
+                            <a href="#">Sponsor a girl in your community</a>
+
+                            <button class="">
+                                Join the program
+                            </button>
+                        </div>
+                    </div>
+                </dialog>
                     </div>
                 </div>
                 <div data-keywords="mathematics science" class="course-card">
@@ -151,7 +429,101 @@
 
                     <div>
                         <button>Get started</button>
-                        <a href="#">Learn more</a>
+                        <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                        <dialog class="card-modal" role="dialog">
+                    <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                    <div class="content">
+                        <div>
+                            <div class="gallery"></div>
+                        </div>
+
+                        <header>
+                            <div>
+                                <h1>Smart Girls Tech Club</h1>
+                                <p>Starting 18th May, 2025</p>
+                                <div class="item-meta-data">
+                                    <span>Tech program</span>
+                                    <span>15-18 years</span>
+                                    <span>SDGs</span>
+                                </div>
+                            </div>
+                            <div class="header-cta-parent">
+                                <a href="#">Get in touch</a>
+                                <a href="#">Start a free trial</a>
+                            </div>
+                        </header>
+
+                        <div role="contentinfo" class="card-info">
+                            <div>
+                                <h2>Program Description</h2>
+
+                                <p>
+                                    The program provides girls with a safe environment to be mentored, support each other as they learn, as well as  provide the platform to network with millions of girls across the world that are using technology to solve problems they care about.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2>This program is for ..</h2>
+                                <p>High school girls who are</p>
+                                <ul>
+                                    <li>Innovative</li>
+                                    <li>Creative</li>
+                                    <li>Determined to TAKE ACTION</li>
+                                    <li>Ready to showcase affordable, innovative technology solutions to solve SDGs in their community.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Eligibility Criteria</h2>
+                                <p>Must be in High School when applying for the
+                                    program.</p>
+                            </div>
+
+                            <div>
+                                <h2>Resources you need for this program</h2>
+                                <ul>
+                                    <li>A Laptop or tablet. </li>
+                                    <li>A pair of headphones</li>
+                                </ul>
+                                <p>*Exercises require a computer with
+                                    internet access</p>
+                            </div>
+                            <div>
+                                <h2>Schedule</h2>
+
+                                <div>
+                                    <p>Date: Saturdays</p>
+                                    <p>Time: 12pm - 2pm</p>
+                                    <p>Location: Edinburgh</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Benefits of the course</h2>
+                                <ul>
+                                    <li>Participants will learn the fundamentals of Computer Science</li>
+                                    <li>Work on assignments in teams to create technology based impact projects that will address the SDG GOAL problems in their immediate communities.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Activities</h2>
+                                <ul>
+                                    <li>Tech Class</li>
+                                    <li>Educational Tours</li>
+                                    <li>Demo Day </li>
+                                    <li>Global Tournaments</li>
+                                </ul>
+                            </div>
+
+                            <a href="#">Sponsor a girl in your community</a>
+
+                            <button class="">
+                                Join the program
+                            </button>
+                        </div>
+                    </div>
+                </dialog>
                     </div>
                 </div>
 
@@ -172,7 +544,101 @@
 
                     <div>
                         <button>Get started</button>
-                        <a href="#">Learn more</a>
+                        <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                        <dialog class="card-modal" role="dialog">
+                    <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                    <div class="content">
+                        <div>
+                            <div class="gallery"></div>
+                        </div>
+
+                        <header>
+                            <div>
+                                <h1>Smart Girls Tech Club</h1>
+                                <p>Starting 18th May, 2025</p>
+                                <div class="item-meta-data">
+                                    <span>Tech program</span>
+                                    <span>15-18 years</span>
+                                    <span>SDGs</span>
+                                </div>
+                            </div>
+                            <div class="header-cta-parent">
+                                <a href="#">Get in touch</a>
+                                <a href="#">Start a free trial</a>
+                            </div>
+                        </header>
+
+                        <div role="contentinfo" class="card-info">
+                            <div>
+                                <h2>Program Description</h2>
+
+                                <p>
+                                    The program provides girls with a safe environment to be mentored, support each other as they learn, as well as  provide the platform to network with millions of girls across the world that are using technology to solve problems they care about.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2>This program is for ..</h2>
+                                <p>High school girls who are</p>
+                                <ul>
+                                    <li>Innovative</li>
+                                    <li>Creative</li>
+                                    <li>Determined to TAKE ACTION</li>
+                                    <li>Ready to showcase affordable, innovative technology solutions to solve SDGs in their community.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Eligibility Criteria</h2>
+                                <p>Must be in High School when applying for the
+                                    program.</p>
+                            </div>
+
+                            <div>
+                                <h2>Resources you need for this program</h2>
+                                <ul>
+                                    <li>A Laptop or tablet. </li>
+                                    <li>A pair of headphones</li>
+                                </ul>
+                                <p>*Exercises require a computer with
+                                    internet access</p>
+                            </div>
+                            <div>
+                                <h2>Schedule</h2>
+
+                                <div>
+                                    <p>Date: Saturdays</p>
+                                    <p>Time: 12pm - 2pm</p>
+                                    <p>Location: Edinburgh</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Benefits of the course</h2>
+                                <ul>
+                                    <li>Participants will learn the fundamentals of Computer Science</li>
+                                    <li>Work on assignments in teams to create technology based impact projects that will address the SDG GOAL problems in their immediate communities.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Activities</h2>
+                                <ul>
+                                    <li>Tech Class</li>
+                                    <li>Educational Tours</li>
+                                    <li>Demo Day </li>
+                                    <li>Global Tournaments</li>
+                                </ul>
+                            </div>
+
+                            <a href="#">Sponsor a girl in your community</a>
+
+                            <button class="">
+                                Join the program
+                            </button>
+                        </div>
+                    </div>
+                </dialog>
                     </div>
                 </div>
                 <div data-keywords="python programming computer" class="course-card">
@@ -190,7 +656,101 @@
 
                     <div>
                         <button>Get started</button>
-                        <a href="#">Learn more</a>
+                        <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                        <dialog class="card-modal" role="dialog">
+                    <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                    <div class="content">
+                        <div>
+                            <div class="gallery"></div>
+                        </div>
+
+                        <header>
+                            <div>
+                                <h1>Smart Girls Tech Club</h1>
+                                <p>Starting 18th May, 2025</p>
+                                <div class="item-meta-data">
+                                    <span>Tech program</span>
+                                    <span>15-18 years</span>
+                                    <span>SDGs</span>
+                                </div>
+                            </div>
+                            <div class="header-cta-parent">
+                                <a href="#">Get in touch</a>
+                                <a href="#">Start a free trial</a>
+                            </div>
+                        </header>
+
+                        <div role="contentinfo" class="card-info">
+                            <div>
+                                <h2>Program Description</h2>
+
+                                <p>
+                                    The program provides girls with a safe environment to be mentored, support each other as they learn, as well as  provide the platform to network with millions of girls across the world that are using technology to solve problems they care about.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2>This program is for ..</h2>
+                                <p>High school girls who are</p>
+                                <ul>
+                                    <li>Innovative</li>
+                                    <li>Creative</li>
+                                    <li>Determined to TAKE ACTION</li>
+                                    <li>Ready to showcase affordable, innovative technology solutions to solve SDGs in their community.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Eligibility Criteria</h2>
+                                <p>Must be in High School when applying for the
+                                    program.</p>
+                            </div>
+
+                            <div>
+                                <h2>Resources you need for this program</h2>
+                                <ul>
+                                    <li>A Laptop or tablet. </li>
+                                    <li>A pair of headphones</li>
+                                </ul>
+                                <p>*Exercises require a computer with
+                                    internet access</p>
+                            </div>
+                            <div>
+                                <h2>Schedule</h2>
+
+                                <div>
+                                    <p>Date: Saturdays</p>
+                                    <p>Time: 12pm - 2pm</p>
+                                    <p>Location: Edinburgh</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Benefits of the course</h2>
+                                <ul>
+                                    <li>Participants will learn the fundamentals of Computer Science</li>
+                                    <li>Work on assignments in teams to create technology based impact projects that will address the SDG GOAL problems in their immediate communities.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Activities</h2>
+                                <ul>
+                                    <li>Tech Class</li>
+                                    <li>Educational Tours</li>
+                                    <li>Demo Day </li>
+                                    <li>Global Tournaments</li>
+                                </ul>
+                            </div>
+
+                            <a href="#">Sponsor a girl in your community</a>
+
+                            <button class="">
+                                Join the program
+                            </button>
+                        </div>
+                    </div>
+                </dialog>
                     </div>
                 </div>
                 <div data-keywords="computer basics" class="course-card">
@@ -208,7 +768,101 @@
 
                     <div>
                         <button>Get started</button>
-                        <a href="#">Learn more</a>
+                        <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                        <dialog class="card-modal" role="dialog">
+                    <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                    <div class="content">
+                        <div>
+                            <div class="gallery"></div>
+                        </div>
+
+                        <header>
+                            <div>
+                                <h1>Smart Girls Tech Club</h1>
+                                <p>Starting 18th May, 2025</p>
+                                <div class="item-meta-data">
+                                    <span>Tech program</span>
+                                    <span>15-18 years</span>
+                                    <span>SDGs</span>
+                                </div>
+                            </div>
+                            <div class="header-cta-parent">
+                                <a href="#">Get in touch</a>
+                                <a href="#">Start a free trial</a>
+                            </div>
+                        </header>
+
+                        <div role="contentinfo" class="card-info">
+                            <div>
+                                <h2>Program Description</h2>
+
+                                <p>
+                                    The program provides girls with a safe environment to be mentored, support each other as they learn, as well as  provide the platform to network with millions of girls across the world that are using technology to solve problems they care about.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2>This program is for ..</h2>
+                                <p>High school girls who are</p>
+                                <ul>
+                                    <li>Innovative</li>
+                                    <li>Creative</li>
+                                    <li>Determined to TAKE ACTION</li>
+                                    <li>Ready to showcase affordable, innovative technology solutions to solve SDGs in their community.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Eligibility Criteria</h2>
+                                <p>Must be in High School when applying for the
+                                    program.</p>
+                            </div>
+
+                            <div>
+                                <h2>Resources you need for this program</h2>
+                                <ul>
+                                    <li>A Laptop or tablet. </li>
+                                    <li>A pair of headphones</li>
+                                </ul>
+                                <p>*Exercises require a computer with
+                                    internet access</p>
+                            </div>
+                            <div>
+                                <h2>Schedule</h2>
+
+                                <div>
+                                    <p>Date: Saturdays</p>
+                                    <p>Time: 12pm - 2pm</p>
+                                    <p>Location: Edinburgh</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Benefits of the course</h2>
+                                <ul>
+                                    <li>Participants will learn the fundamentals of Computer Science</li>
+                                    <li>Work on assignments in teams to create technology based impact projects that will address the SDG GOAL problems in their immediate communities.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Activities</h2>
+                                <ul>
+                                    <li>Tech Class</li>
+                                    <li>Educational Tours</li>
+                                    <li>Demo Day </li>
+                                    <li>Global Tournaments</li>
+                                </ul>
+                            </div>
+
+                            <a href="#">Sponsor a girl in your community</a>
+
+                            <button class="">
+                                Join the program
+                            </button>
+                        </div>
+                    </div>
+                </dialog>
                     </div>
                 </div>
                 <div data-keywords="machine learning data science scratch ai artificial intelligence" class="course-card">
@@ -226,7 +880,101 @@
 
                     <div>
                         <button>Get started</button>
-                        <a href="#">Learn more</a>
+                        <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                        <dialog class="card-modal" role="dialog">
+                    <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                    <div class="content">
+                        <div>
+                            <div class="gallery"></div>
+                        </div>
+
+                        <header>
+                            <div>
+                                <h1>Smart Girls Tech Club</h1>
+                                <p>Starting 18th May, 2025</p>
+                                <div class="item-meta-data">
+                                    <span>Tech program</span>
+                                    <span>15-18 years</span>
+                                    <span>SDGs</span>
+                                </div>
+                            </div>
+                            <div class="header-cta-parent">
+                                <a href="#">Get in touch</a>
+                                <a href="#">Start a free trial</a>
+                            </div>
+                        </header>
+
+                        <div role="contentinfo" class="card-info">
+                            <div>
+                                <h2>Program Description</h2>
+
+                                <p>
+                                    The program provides girls with a safe environment to be mentored, support each other as they learn, as well as  provide the platform to network with millions of girls across the world that are using technology to solve problems they care about.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2>This program is for ..</h2>
+                                <p>High school girls who are</p>
+                                <ul>
+                                    <li>Innovative</li>
+                                    <li>Creative</li>
+                                    <li>Determined to TAKE ACTION</li>
+                                    <li>Ready to showcase affordable, innovative technology solutions to solve SDGs in their community.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Eligibility Criteria</h2>
+                                <p>Must be in High School when applying for the
+                                    program.</p>
+                            </div>
+
+                            <div>
+                                <h2>Resources you need for this program</h2>
+                                <ul>
+                                    <li>A Laptop or tablet. </li>
+                                    <li>A pair of headphones</li>
+                                </ul>
+                                <p>*Exercises require a computer with
+                                    internet access</p>
+                            </div>
+                            <div>
+                                <h2>Schedule</h2>
+
+                                <div>
+                                    <p>Date: Saturdays</p>
+                                    <p>Time: 12pm - 2pm</p>
+                                    <p>Location: Edinburgh</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Benefits of the course</h2>
+                                <ul>
+                                    <li>Participants will learn the fundamentals of Computer Science</li>
+                                    <li>Work on assignments in teams to create technology based impact projects that will address the SDG GOAL problems in their immediate communities.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Activities</h2>
+                                <ul>
+                                    <li>Tech Class</li>
+                                    <li>Educational Tours</li>
+                                    <li>Demo Day </li>
+                                    <li>Global Tournaments</li>
+                                </ul>
+                            </div>
+
+                            <a href="#">Sponsor a girl in your community</a>
+
+                            <button class="">
+                                Join the program
+                            </button>
+                        </div>
+                    </div>
+                </dialog>
                     </div>
                 </div>
                 <div data-keywords="programming block based computer block-based" class="course-card">
@@ -244,7 +992,101 @@
 
                     <div>
                         <button>Get started</button>
-                        <a href="#">Learn more</a>
+                        <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                        <dialog class="card-modal" role="dialog">
+                    <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                    <div class="content">
+                        <div>
+                            <div class="gallery"></div>
+                        </div>
+
+                        <header>
+                            <div>
+                                <h1>Smart Girls Tech Club</h1>
+                                <p>Starting 18th May, 2025</p>
+                                <div class="item-meta-data">
+                                    <span>Tech program</span>
+                                    <span>15-18 years</span>
+                                    <span>SDGs</span>
+                                </div>
+                            </div>
+                            <div class="header-cta-parent">
+                                <a href="#">Get in touch</a>
+                                <a href="#">Start a free trial</a>
+                            </div>
+                        </header>
+
+                        <div role="contentinfo" class="card-info">
+                            <div>
+                                <h2>Program Description</h2>
+
+                                <p>
+                                    The program provides girls with a safe environment to be mentored, support each other as they learn, as well as  provide the platform to network with millions of girls across the world that are using technology to solve problems they care about.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2>This program is for ..</h2>
+                                <p>High school girls who are</p>
+                                <ul>
+                                    <li>Innovative</li>
+                                    <li>Creative</li>
+                                    <li>Determined to TAKE ACTION</li>
+                                    <li>Ready to showcase affordable, innovative technology solutions to solve SDGs in their community.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Eligibility Criteria</h2>
+                                <p>Must be in High School when applying for the
+                                    program.</p>
+                            </div>
+
+                            <div>
+                                <h2>Resources you need for this program</h2>
+                                <ul>
+                                    <li>A Laptop or tablet. </li>
+                                    <li>A pair of headphones</li>
+                                </ul>
+                                <p>*Exercises require a computer with
+                                    internet access</p>
+                            </div>
+                            <div>
+                                <h2>Schedule</h2>
+
+                                <div>
+                                    <p>Date: Saturdays</p>
+                                    <p>Time: 12pm - 2pm</p>
+                                    <p>Location: Edinburgh</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Benefits of the course</h2>
+                                <ul>
+                                    <li>Participants will learn the fundamentals of Computer Science</li>
+                                    <li>Work on assignments in teams to create technology based impact projects that will address the SDG GOAL problems in their immediate communities.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Activities</h2>
+                                <ul>
+                                    <li>Tech Class</li>
+                                    <li>Educational Tours</li>
+                                    <li>Demo Day </li>
+                                    <li>Global Tournaments</li>
+                                </ul>
+                            </div>
+
+                            <a href="#">Sponsor a girl in your community</a>
+
+                            <button class="">
+                                Join the program
+                            </button>
+                        </div>
+                    </div>
+                </dialog>
                     </div>
                 </div>
                 <div data-keywords="programming computer" class="course-card">
@@ -262,7 +1104,101 @@
 
                     <div>
                         <button>Get started</button>
-                        <a href="#">Learn more</a>
+                        <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                        <dialog class="card-modal" role="dialog">
+                    <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                    <div class="content">
+                        <div>
+                            <div class="gallery"></div>
+                        </div>
+
+                        <header>
+                            <div>
+                                <h1>Smart Girls Tech Club</h1>
+                                <p>Starting 18th May, 2025</p>
+                                <div class="item-meta-data">
+                                    <span>Tech program</span>
+                                    <span>15-18 years</span>
+                                    <span>SDGs</span>
+                                </div>
+                            </div>
+                            <div class="header-cta-parent">
+                                <a href="#">Get in touch</a>
+                                <a href="#">Start a free trial</a>
+                            </div>
+                        </header>
+
+                        <div role="contentinfo" class="card-info">
+                            <div>
+                                <h2>Program Description</h2>
+
+                                <p>
+                                    The program provides girls with a safe environment to be mentored, support each other as they learn, as well as  provide the platform to network with millions of girls across the world that are using technology to solve problems they care about.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2>This program is for ..</h2>
+                                <p>High school girls who are</p>
+                                <ul>
+                                    <li>Innovative</li>
+                                    <li>Creative</li>
+                                    <li>Determined to TAKE ACTION</li>
+                                    <li>Ready to showcase affordable, innovative technology solutions to solve SDGs in their community.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Eligibility Criteria</h2>
+                                <p>Must be in High School when applying for the
+                                    program.</p>
+                            </div>
+
+                            <div>
+                                <h2>Resources you need for this program</h2>
+                                <ul>
+                                    <li>A Laptop or tablet. </li>
+                                    <li>A pair of headphones</li>
+                                </ul>
+                                <p>*Exercises require a computer with
+                                    internet access</p>
+                            </div>
+                            <div>
+                                <h2>Schedule</h2>
+
+                                <div>
+                                    <p>Date: Saturdays</p>
+                                    <p>Time: 12pm - 2pm</p>
+                                    <p>Location: Edinburgh</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Benefits of the course</h2>
+                                <ul>
+                                    <li>Participants will learn the fundamentals of Computer Science</li>
+                                    <li>Work on assignments in teams to create technology based impact projects that will address the SDG GOAL problems in their immediate communities.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2>Activities</h2>
+                                <ul>
+                                    <li>Tech Class</li>
+                                    <li>Educational Tours</li>
+                                    <li>Demo Day </li>
+                                    <li>Global Tournaments</li>
+                                </ul>
+                            </div>
+
+                            <a href="#">Sponsor a girl in your community</a>
+
+                            <button class="">
+                                Join the program
+                            </button>
+                        </div>
+                    </div>
+                </dialog>
                     </div>
                 </div>
 

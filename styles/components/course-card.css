@@ -86,9 +86,10 @@
     background-color: var(--purple-500);
     color: white;
     border-radius: 2rem;
+    text-decoration: none;
 }
 
-.course-card > :last-child > :last-child {
-    text-decoration: none;
+.course-card > :last-child > :nth-child(2) {
     color: var(--purple-500);
+    background-color: transparent;
 }
