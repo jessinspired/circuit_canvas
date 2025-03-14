@@ -50,8 +50,11 @@
     row-gap: 1.5rem;
 }
 
-.about > article > :nth-child(3) > :nth-child(2),
-.about > article > :nth-child(3) > :nth-child(3) {
+.about ul {
+    display: grid;
+    row-gap: 1rem;
+}
+.about li {
     color: var(--pink-800);
     font-family: var(--lexend-semibold);
 }

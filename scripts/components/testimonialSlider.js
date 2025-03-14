@@ -1,7 +1,7 @@
 const articles = document.querySelectorAll(
   ".testimonial-article-container article"
 );
-const images = document.querySelectorAll(".testimonial-images img");
+const images = document.querySelectorAll(".testimonial-images > *");
 const progressBar = document.querySelector(".testimonial-progress-bar div");
 const prevBtn = document.querySelector(
   ".testimonial-toggle-btns-container button:first-child"
