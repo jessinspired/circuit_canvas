@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/menu-btn.css">
 
+    <link rel="stylesheet" href="styles/components/descriptionModal.css">
+    <link rel="stylesheet" href="styles/components/course-card.css">
+
     <link rel="stylesheet" href="styles/home/hero.css">
     <link rel="stylesheet" href="styles/home/about.css">
     <link rel="stylesheet" href="styles/home/services.css">
@@ -36,9 +39,11 @@
     <link rel="stylesheet" href="styles/home/testimonials.css">
 
 
+
     <script src="/scripts/components/courseCard.js" defer></script>
     <script src="/scripts/home/pastEvents.js" defer></script>
     <script src="/scripts/home/programsAnimation.js" defer></script>
+    <script src="/scripts/home/coursesScroll.js" defer></script>
     <script src="/scripts/components/testimonialSlider.js" defer></script>
 
     <link rel="preload" href="/assets/home/immaginovation-poster.png" as="image" fetchpriority="high">
@@ -321,9 +326,120 @@
             <a href="/courses.html">See all our courses</a>
         </div>
 
+        <div class="scroll-buttons">
+            <button id="prev-btn" disabled>⬅ Previous</button>
+            <button id="next-btn">Next ➡</button>
+        </div>
+
         <div class="courses-scroll">
+            <div data-keywords="web website development programming computer" class="course-card">
+                <img loading="lazy" src="/assets/courses/web-dev.png" alt="course-img">
+                <div>
+                    <span>online & physical class</span>
+                    <span>Beginner level</span>
+                </div>
+
+                <article>
+                    <h2>Web development</h2>
+
+                    <p>Create colorful, responsive and interactive websites and bring ideas to life!</p>
+                </article>
+
+                <div>
+                    <a href="https://wa.me/447555085321?text=Hello!%20I'm%20interested%20in%20your%20Web Development%20course.%20Can%20you%20share%20more%20details?" target="_blank">Get started</a>
+                    <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                    <dialog class="card-modal" role="dialog">
+                        <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                        <div class="content">
+                            <div>
+                                <div class="gallery"></div>
+                            </div>
+
+                            <header>
+                                <div>
+                                    <h1>Web Development</h1>
+                                    <p>Date: 13th Feb - 24th Mar, 2025</p>
+                                    <div class="item-meta-data">
+                                        <span>online</span>
+                                        <span>15-18 years</span>
+                                        <span>STEAM</span>
+                                    </div>
+                                </div>
+                                <div class="header-cta-parent">
+                                    <a href="https://wa.me/447555085321?text=Hello!%20I'm%20interested%20in%20your%20Web%20Development%20course.%20Can%20you%20share%20more%20details?" target="_blank">Get in touch</a>
+                                    <a href="https://wa.me/447555085321?text=Hi!%20I'd%20love%20to%20start%20a%20free%20trial%20for%20the%20Web%20Development%20course.%20How%20do%20I%20begin?" target="_blank">Start a free trial</a>
+                                </div>
+                            </header>
+
+                            <div role="contentinfo" class="card-info">
+                                <div>
+                                    <h2>Course Description</h2>
+                                    <p>
+                                        This course provides an introduction to the fundamentals of web development using HTML and CSS.
+                                        Students will learn the basics of HTML syntax, including creating web pages, organizing content using
+                                        semantic markup, and adding links and images. They will learn CSS syntax, including styling web pages
+                                        using color, typography, layout, and responsive design techniques. They will also learn fundamental
+                                        concepts of JavaScript programming language, including data types, variables, operators, control structures, functions, arrays, and objects. Through a combination of lectures, demonstrations, and hands-
+                                        on exercises, students will gain practical experience in designing and building web pages that meet web standards and best practices.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2>This course is for ..</h2>
+                                    <ul>
+                                        <li>The course is suitable for anyone interested in learning the fundamentals of web development using HTML and CSS.</li>
+                                        <li>Beneficial for individuals looking to enhance their career prospects by gaining basic web development skills.</li>
+                                        <li>Ideal for individuals who want to create their own websites.</li>
+                                        <li>Open to beginners with no prior experience in web development.</li>
+                                        <li>Suitable for students looking to complement their existing skills in graphic design.</li>
+                                        <li>Perfect for anyone who wants to bring creative ideas to life.</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Eligibility Criteria</h2>
+                                    <ul>
+                                        <li>Basic Typing Skills</li>
+                                        <li>Basic understanding of how the internet works</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Resources you need for this program</h2>
+                                    <ul>
+                                        <li>Students should come with (A Laptop/tablet, notebook and Pen)</li>
+                                        <li>Exercises require computer with internet access</li>
+                                        <li>Windows 7, Windows 8, Windows 10</li>
+                                        <li>2 GB of RAM minimum (4GB recommended)</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Benefits of the course</h2>
+                                    <ul>
+                                        <li><strong>Website Creation Skills:</strong> Students will learn how to create websites from scratch using HTML and CSS. This includes structuring web pages with HTML tags and styling them with CSS properties.</li>
+                                        <li><strong>Enhanced Career Opportunities:</strong> In today's digital age, having basic web development skills is highly valued by many employers. By learning HTML and CSS, students can enhance their career prospects and open up new job opportunities.</li>
+                                        <li><strong>Increased Creativity:</strong> With HTML and CSS, students can unleash their creativity and design visually stunning websites that stand out from the crowd.</li>
+                                        <li><strong>Improved Problem-Solving Skills:</strong> Web development involves a lot of problem-solving. By working on real-world projects and troubleshooting issues that arise, students can improve their analytical and critical thinking skills.</li>
+                                        <li><strong>Understanding of Web Standards:</strong> HTML and CSS are essential tools for creating websites that meet industry standards and best practices. By learning these technologies, students will develop an understanding of the importance of web standards and how to adhere to them.</li>
+                                        <li><strong>Ability to Collaborate:</strong> Web development is often a collaborative process, requiring individuals to work together to create a cohesive and functional website. By working on group projects, students can develop teamwork and collaboration skills.</li>
+                                        <li><strong>Flexibility and Adaptability:</strong> As web development technologies evolve, it's important to stay current and adapt to new tools and techniques. By learning HTML and CSS, students can develop a mindset of flexibility and adaptability, which will serve them well in any field.</li>
+                                        <li><strong>Basic JavaScript Coding:</strong> Write basic JavaScript code using the fundamental concepts learned in the course.</li>
+                                        <li><strong>Interactive Web Pages:</strong> Create interactive web pages using JavaScript and DOM manipulation.</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Course curriculum</h2>
+                                    <a href="https://drive.google.com/uc?export=download&id=1iavj8Ml-jOLdGaJTKZb3JDNCJoaeeAGy" download>Download Curriculum</a>
+                                </div>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
             <div data-keywords="ai aritficial intelligence robotics engineering" class="course-card">
-                <img src="/assets/courses/card-img.png" alt="course-img">
+                <img loading="lazy" src="/assets/courses/card-img.png" alt="course-img">
                 <div>
                     <span>online & physical class</span>
                     <span>Beginner level</span>
@@ -336,12 +452,123 @@
                 </article>
 
                 <div>
-                    <button>Get started</button>
-                    <a href="#">Learn more</a>
+                    <a href="https://wa.me/447555085321?text=Hello!%20I'm%20interested%20in%20your%20Robotics%20course.%20Can%20you%20share%20more%20details?" target="_blank">Get started</a>
+                    <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                    <dialog class="card-modal" role="dialog">
+                        <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                        <div class="content">
+                            <div>
+                                <div class="gallery"></div>
+                            </div>
+
+                            <header>
+                                <div>
+                                    <h1>Robotics</h1>
+                                    <p>Date: 13th Feb - 24th Mar, 2025</p>
+                                    <div class="item-meta-data">
+                                        <span>online</span>
+                                        <span>15-18 years</span>
+                                        <span>SDGs</span>
+                                    </div>
+                                </div>
+                                <div class="header-cta-parent">
+                                    <a href="https://wa.me/447555085321?text=Hello!%20I'm%20interested%20in%20your%20Robotics%20course.%20Can%20you%20share%20more%20details?" target="_blank">Get in touch</a>
+                                    <a href="https://wa.me/447555085321?text=Hi!%20I'd%20love%20to%20start%20a%20free%20trial%20for%20the%20Robotics%20course.%20How%20do%20I%20begin?" target="_blank">Start a free trial</a>
+                                </div>
+                            </header>
+
+                            <div role="contentinfo" class="card-info">
+                                <div>
+                                    <h2>Course Description</h2>
+
+                                    <p>
+                                        Robotics and artificial intelligence have become part of our daily lives, it is now been used in the
+                                    offices, homes and security agencies. This course gives comprehensive guild on robotics and the
+                                    application of artificial intelligence in automating devices for smart homes, smart offices, smart
+                                    farms, smart hospitals and smart factories etc., it also covers Internet of Thing (IoT), and gives
+                                    indebt understanding on how electronics works and their application areas.
+                                    The students will learn how to apply the knowledge in solving world problems, become
+                                    innovative by creating problem solving robots that mimics human and creating automated
+                                    machines (Robots).
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2>This course is for ..</h2>
+                                    <ul>
+                                        <li>Everyone who wants to explore the world of Robotics and Artificial Intelligence</li>
+                                        <li>Curious minds wanting to learn Robotics</li>
+                                        <li>Robotics engineers wanting to improve their skills</li>
+                                        <li>Tech savvies</li>
+                                        <li>Those who love drones and are willing to learn how to build and fly them</li>
+                                        <li>Those interested in 3D printing</li>
+                                        <li>Everyone interested in constructing smart home devices like voice-activated lights, smart waste bins, automated light switches, obstacle detection devices, theft detection, fire alarms, to mention but a few</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Eligibility Criteria</h2>
+                                    <ul>
+                                        <li>Basic Knowledge of computer is required for beginners</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Resources you need for this program</h2>
+                                    <ul>
+                                        <li>Laptop (Computer)
+                                            <ul>
+                                                <li>Windows 7, Windows 8, Windows 10</li>
+                                                <li>2 GB of RAM minimum (4GB recommended)</li>
+                                            </ul>
+                                        </li>
+                                        <li>Robotics Kits (with full set of sensors)</li>
+                                        <li>Writing Materials</li>
+                                    </ul>
+                                </div>
+
+                                <!-- <div>
+                                    <h2>Schedule</h2>
+
+                                    <div>
+                                        <p>Date: Saturdays</p>
+                                        <p>Time: 12pm - 2pm</p>
+                                        <p>Location: Edinburgh</p>
+                                    </div>
+                                </div> -->
+
+                                <div>
+                                    <h2>Benefits of the course</h2>
+                                    <ul>
+                                        <li>Understand automation</li>
+                                        <li>Use Internet of Things in solving world problems</li>
+                                        <li>Understand Drone technology and how to build and fly them</li>
+                                        <li>Understand 3D Printing Technology</li>
+                                        <li>Compete with other robotics experts both local and international</li>
+                                        <li>Create automated devices capable of replacing human efforts</li>
+                                        <li>Become innovative</li>
+                                    </ul>
+
+                                </div>
+
+                                <div>
+                                    <h2>Course curriculum</h2>
+
+                                    <a href="https://drive.google.com/uc?export=download&id=1PIPzMgLBo0ig--Z4Gg2FYt0ROyiSgb8o" download>Download Curriculum</a>
+
+                                </div>
+
+
+                                <!-- <button class="">
+                                    Join the program
+                                </button> -->
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
             </div>
             <div data-keywords="chemistry science" class="course-card">
-                <img src="/assets/courses/card-img.png" alt="course-img">
+                <img loading="lazy" src="/assets/courses/chemistry.png" alt="course-img">
                 <div>
                     <span>online & physical class</span>
                     <span>Beginner level</span>
@@ -354,12 +581,92 @@
                 </article>
 
                 <div>
-                    <button>Get started</button>
-                    <a href="#">Learn more</a>
+                    <a href="https://wa.me/447555085321?text=Hello!%20I'm%20interested%20in%20your%20Chemistry%20course.%20Can%20you%20share%20more%20details?" target="_blank">Get started</a>
+                    <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                    <dialog class="card-modal" role="dialog">
+                        <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                        <div class="content">
+                            <div>
+                                <div class="gallery"></div>
+                            </div>
+
+                            <header>
+                                <div>
+                                    <h1>Chemistry</h1>
+                                    <p>Date: 13th Feb - 24th Mar, 2025</p>
+                                    <div class="item-meta-data">
+                                        <span>online</span>
+                                        <span>15-18 years</span>
+                                        <span>STEAM</span>
+                                    </div>
+                                </div>
+                                <div class="header-cta-parent">
+                                    <a href="https://wa.me/447555085321?text=Hello!%20I'm%20interested%20in%20your%20Chemistry%20course.%20Can%20you%20share%20more%20details?" target="_blank">Get in touch</a>
+                                    <a href="https://wa.me/447555085321?text=Hi!%20I'd%20love%20to%20start%20a%20free%20trial%20for%20the%20Chemistry%20course.%20How%20do%20I%20begin?" target="_blank">Start a free trial</a>
+                                </div>
+                            </header>
+
+                            <div role="contentinfo" class="card-info">
+                                <div>
+                                    <h2>Course Description</h2>
+                                    <p>
+                                        Chemistry is the foundation of innovation in science and technology. This course explores core chemistry concepts, practical applications, and real-world problem-solving.
+                                        Students will experiment with chemical reactions, understand atomic structures, and learn how chemistry impacts industries such as medicine, energy, and environmental sustainability.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2>This course is for ..</h2>
+                                    <ul>
+                                        <li>Students curious about the science of matter and chemical reactions</li>
+                                        <li>Future scientists and engineers looking to build a strong chemistry foundation</li>
+                                        <li>Those interested in practical chemistry experiments and hands-on learning</li>
+                                        <li>Students preparing for national and international chemistry competitions</li>
+                                        <li>Anyone who wants to understand the chemistry behind everyday materials</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Eligibility Criteria</h2>
+                                    <ul>
+                                        <li>Open to SS1 - SS3 students</li>
+                                        <li>Basic knowledge of secondary school science is recommended</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Resources you need for this program</h2>
+                                    <ul>
+                                        <li>Lab notebook</li>
+                                        <li>Basic laboratory equipment (provided for in-person students)</li>
+                                        <li>Periodic table and molecular model kit</li>
+                                        <li>Computer with internet access (for virtual experiments and simulations)</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Benefits of the course</h2>
+                                    <ul>
+                                        <li>Understand fundamental chemistry concepts and their real-world applications</li>
+                                        <li>Perform engaging hands-on experiments safely</li>
+                                        <li>Learn the chemistry behind everyday materials and processes</li>
+                                        <li>Gain problem-solving and critical thinking skills</li>
+                                        <li>Prepare for higher-level science courses and STEM careers</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Course curriculum</h2>
+                                    <a href="#" download>Download Curriculum</a>
+                                </div>
+                            </div>
+                        </div>
+                    </dialog>
+
                 </div>
             </div>
             <div data-keywords="physics science" class="course-card">
-                <img src="/assets/courses/card-img.png" alt="course-img">
+                <img loading="lazy" src="/assets/courses/physics.png" alt="course-img">
                 <div>
                     <span>online & physical class</span>
                     <span>Beginner level</span>
@@ -372,12 +679,90 @@
                 </article>
 
                 <div>
-                    <button>Get started</button>
-                    <a href="#">Learn more</a>
+                    <a href="https://wa.me/447555085321?text=Hello!%20I'm%20interested%20in%20your%20Physics%20course.%20Can%20you%20share%20more%20details?" target="_blank">Get started</a>
+                    <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                    <dialog class="card-modal" role="dialog">
+                        <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                        <div class="content">
+                            <div>
+                                <div class="gallery"></div>
+                            </div>
+
+                            <header>
+                                <div>
+                                    <h1>Physics</h1>
+                                    <p>Date: 13th Feb - 24th Mar, 2025</p>
+                                    <div class="item-meta-data">
+                                        <span>online</span>
+                                        <span>15-18 years</span>
+                                        <span>STEAM</span>
+                                    </div>
+                                </div>
+                                <div class="header-cta-parent">
+                                    <a href="https://wa.me/447555085321?text=Hello!%20I'm%20interested%20in%20your%20Physics%20course.%20Can%20you%20share%20more%20details?" target="_blank">Get in touch</a>
+                                    <a href="https://wa.me/447555085321?text=Hi!%20I'd%20love%20to%20start%20a%20free%20trial%20for%20the%20Physics%20course.%20How%20do%20I%20begin?" target="_blank">Start a free trial</a>
+                                </div>
+                            </header>
+
+                            <div role="contentinfo" class="card-info">
+                                <div>
+                                    <h2>Course Description</h2>
+                                    <p>
+                                        Physics helps us understand the natural world, from the smallest atoms to the vastness of space. This course covers motion, energy, waves, electricity, and magnetism, providing students with hands-on experiments and real-world applications to solidify their understanding.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2>This course is for ..</h2>
+                                    <ul>
+                                        <li>Students curious about the fundamental laws of nature</li>
+                                        <li>Aspiring engineers, scientists, and innovators</li>
+                                        <li>Those interested in mechanics, electricity, and space exploration</li>
+                                        <li>Students preparing for physics competitions and exams</li>
+                                        <li>Anyone who enjoys solving real-world problems using physics concepts</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Eligibility Criteria</h2>
+                                    <ul>
+                                        <li>Open to SS1 - SS3 students</li>
+                                        <li>Basic knowledge of secondary school mathematics is recommended</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Resources you need for this program</h2>
+                                    <ul>
+                                        <li>Scientific calculator</li>
+                                        <li>Lab notebook</li>
+                                        <li>Physics experiment kit (optional but recommended)</li>
+                                        <li>Computer with internet access for simulations</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Benefits of the course</h2>
+                                    <ul>
+                                        <li>Develop a strong understanding of physics concepts</li>
+                                        <li>Learn through engaging experiments and real-world applications</li>
+                                        <li>Improve problem-solving and analytical thinking skills</li>
+                                        <li>Gain practical knowledge for engineering and technical careers</li>
+                                        <li>Prepare for national and international science competitions</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Course curriculum</h2>
+                                    <a href="#" download>Download Curriculum</a>
+                                </div>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
             </div>
             <div data-keywords="mathematics science" class="course-card">
-                <img src="/assets/courses/card-img.png" alt="course-img">
+                <img loading="lazy" src="/assets/courses/maths.png" alt="course-img">
                 <div>
                     <span>online & physical class</span>
                     <span>Beginner level</span>
@@ -390,10 +775,236 @@
                 </article>
 
                 <div>
-                    <button>Get started</button>
-                    <a href="#">Learn more</a>
+                    <a href="https://wa.me/447555085321?text=Hello!%20I'm%20interested%20in%20your%20Mathematics%20course.%20Can%20you%20share%20more%20details?" target="_blank">Get started</a>
+                    <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                    <dialog class="card-modal" role="dialog">
+                        <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                        <div class="content">
+                            <div>
+                                <div class="gallery"></div>
+                            </div>
+
+                            <header>
+                                <div>
+                                    <h1>Mathematics</h1>
+                                    <p>Date: 13th Feb - 24th Mar, 2025</p>
+                                    <div class="item-meta-data">
+                                        <span>online</span>
+                                        <span>11-18 years</span>
+                                        <span>STEM</span>
+                                    </div>
+                                </div>
+                                <div class="header-cta-parent">
+                                    <a href="https://wa.me/447555085321?text=Hello!%20I'm%20interested%20in%20your%20Mathematics%20course.%20Can%20you%20share%20more%20details?" target="_blank">Get in touch</a>
+                                    <a href="https://wa.me/447555085321?text=Hi!%20I'd%20love%20to%20start%20a%20free%20trial%20for%20the%20Mathematics%20course.%20How%20do%20I%20begin?" target="_blank">Start a free trial</a>
+                                </div>
+                            </header>
+
+                            <div role="contentinfo" class="card-info">
+                                <div>
+                                    <h2>Course Description</h2>
+                                    <p>
+                                        Mathematics is the foundation of science, technology, and everyday problem-solving. This course covers essential topics such as algebra, geometry, statistics, and calculus, ensuring students build confidence and strong mathematical skills for academic excellence and real-world applications.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2>This course is for ..</h2>
+                                    <ul>
+                                        <li>Students from JSS1 to SS3 looking to improve their mathematical skills</li>
+                                        <li>Those preparing for school exams and external competitions</li>
+                                        <li>Students who struggle with numbers and need a simplified approach</li>
+                                        <li>Anyone interested in logic, problem-solving, and analytical thinking</li>
+                                        <li>Aspiring engineers, scientists, and economists</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Eligibility Criteria</h2>
+                                    <ul>
+                                        <li>Open to JSS1 - SS3 students</li>
+                                        <li>No prior knowledge required – all concepts will be explained in detail</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Resources you need for this program</h2>
+                                    <ul>
+                                        <li>Mathematical set (ruler, protractor, compass, etc.)</li>
+                                        <li>Scientific calculator</li>
+                                        <li>Notebook for solving problems</li>
+                                        <li>Computer with internet access for interactive exercises</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Benefits of the course</h2>
+                                    <ul>
+                                        <li>Master mathematical concepts with ease</li>
+                                        <li>Develop strong problem-solving and logical reasoning skills</li>
+                                        <li>Prepare effectively for WAEC, NECO, and UTME exams</li>
+                                        <li>Improve speed and accuracy in solving complex problems</li>
+                                        <li>Gain confidence in handling real-life mathematical applications</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Course curriculum</h2>
+                                    <a href="#" download>Download Curriculum</a>
+                                </div>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
             </div>
+            <div data-keywords="ai aritficial intelligence python robotics data science" class="course-card">
+                <img loading="lazy" src="/assets/courses/data-science.png" alt="course-img">
+                <div>
+                    <span>online & physical class</span>
+                    <span>Beginner level</span>
+                </div>
+
+                <article>
+                    <h2>Python For Data Science</h2>
+
+                    <p>Learn Python for Data Science with hands-on projects! 🚀</p>
+                </article>
+
+                <div>
+                    <a href="https://wa.me/447555085321?text=Hello!%20I'm%20interested%20in%20your%20Python%20For%20Data%20Science%20course.%20Can%20you%20share%20more%20details?" target="_blank">Get started</a>
+                    <button onclick="this.nextElementSibling.showModal()">Learn more</button>
+                    <dialog class="card-modal" role="dialog">
+                        <button class="close-item-modal-btn" onclick="this.parentElement.close()">X</button>
+                        <div class="content">
+                            <div>
+                                <div class="gallery"></div>
+                            </div>
+
+                            <header>
+                                <div>
+                                    <h1>Python For Data Science</h1>
+                                    <div class="item-meta-data">
+                                        <span>online</span>
+                                        <span>15-18 years</span>
+                                        <span>SDGs</span>
+                                    </div>
+                                </div>
+                                <div class="header-cta-parent">
+                                    <a href="https://wa.me/447555085321?text=Hello!%20I'm%20interested%20in%20your%20Python%20For%20Data%20Science%20%20course.%20Can%20you%20share%20more%20details?" target="_blank">Get in touch</a>
+                                    <a href="https://wa.me/447555085321?text=Hi!%20I'd%20love%20to%20start%20a%20free%20trial%20for%20the%20Python%20For%20Data%20Science%20course.%20How%20do%20I%20begin?" target="_blank">Start a free trial</a>
+                                </div>
+                            </header>
+
+                            <div role="contentinfo" class="card-info">
+                                <div>
+                                    <h2>Course Description</h2>
+
+                                    <p>
+                                        This course is designed to provide students with a comprehensive introduction to
+                                        Python programming and its applications in data science covering the basics of
+                                        Python programming to advanced topics such as machine learning, deep learning,
+                                        natural language processing, and big data processing with Apache Spark. Students
+                                        will have a strong foundation in Python programming and data science. They will be
+                                        able to manipulate and analyze large datasets, build machine learning models, and
+                                        visualize their findings. Students will have a solid foundation in Python programming
+                                        and its applications in data science. They will also have experience in completing
+                                        projects using various Python libraries
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2>This course is for ..</h2>
+                                    <ul>
+                                        <li>Aspiring data scientists looking to build a strong Python foundation.</li>
+                                        <li>Beginners who want to learn Python for data science applications.</li>
+                                        <li>Students interested in machine learning, deep learning, and NLP.</li>
+                                        <li>Professionals looking to enhance their data analysis and visualization skills.</li>
+                                        <li>Anyone eager to work with large datasets and big data processing using Apache Spark.</li>
+                                        <li>Individuals who want hands-on experience with Python libraries for data science.</li>
+                                    </ul>
+
+                                </div>
+
+                                <div>
+                                    <h2>Eligibility Criteria</h2>
+                                    <ul>
+                                        <li>Basic Knowledge of computer is required for beginners</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Resources you need for this program</h2>
+                                    <ul>
+                                        <li>You must have a laptop with the following system requirements:</li>
+                                        <ul>
+                                          <li>Windows 8 or Windows 10</li>
+                                          <li>4GB of RAM minimum (8GB recommended)</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Benefits of the course</h2>
+                                    <ul>
+                                        <li>Write and understand basic Python code using:
+                                          <ul>
+                                            <li>Variables, data types, conditional statements, loops</li>
+                                            <li>Lists, tuples, dictionaries, sets</li>
+                                            <li>Functions, modules, and libraries</li>
+                                          </ul>
+                                        </li>
+                                        <li>Handle exceptions and perform file I/O operations in Python.</li>
+                                        <li>Understand the fundamentals of digital art and its possibilities.</li>
+                                        <li>Understand and apply advanced Python concepts such as:
+                                          <ul>
+                                            <li>Recursion</li>
+                                            <li>Lambda functions</li>
+                                            <li>Decorators</li>
+                                            <li>Object-Oriented Programming (OOP)</li>
+                                          </ul>
+                                        </li>
+                                        <li>Work with databases using SQLite and create networked applications using sockets.</li>
+                                        <li>Apply data science concepts using:
+                                          <ul>
+                                            <li>NumPy and Pandas for data manipulation</li>
+                                            <li>Matplotlib and Seaborn for data visualization</li>
+                                            <li>Scikit-Learn for machine learning</li>
+                                          </ul>
+                                        </li>
+                                        <li>Gain experience in:
+                                          <ul>
+                                            <li>Deep Learning</li>
+                                            <li>Natural Language Processing (NLP)</li>
+                                            <li>Image processing</li>
+                                            <li>Big Data with Apache Spark</li>
+                                          </ul>
+                                        </li>
+                                        <li>Build Python applications from simple to complex.</li>
+                                        <li>Perform data analysis, visualization, and modeling on various data sources, including text, images, and big data.</li>
+                                        <li>Develop critical skills for a career in data science.</li>
+                                      </ul>
+
+
+                                </div>
+
+                                <div>
+                                    <h2>Course curriculum</h2>
+
+                                    <a href="https://drive.google.com/uc?export=download&id=1ZMNVePhwwjtZZh5Xl4fsTn1ILGxs7OLh" download>
+                                        Download Curriculum
+                                    </a>
+                                </div>
+
+
+                                <!-- <button class="">
+                                    Join the program
+                                </button> -->
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+            <a href="/courses.html">See all our courses</a>
         </div>
     </section>
 
@@ -667,8 +1278,6 @@
         </p>
 
     </footer>
-
-
 
 </body>
 </html>
