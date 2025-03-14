@@ -172,7 +172,7 @@
     text-decoration: none;
     color: white;
     background-color: var(--purple-900);
-    padding: .8rem 1.5rem;
+    /* padding: .8rem 1.5rem; */
     border-radius: 2rem;
     text-align: center;
     font-size: .8rem;
@@ -181,10 +181,14 @@
 .program-info-container > :nth-child(2) > :nth-child(2) {
     background-color: white;
     border: 1px solid var(--purple-900);
-    padding: .8rem 1.5rem;
+    /* padding: .8rem 1.5rem; */
     border-radius: 2rem;
     text-align: center;
     font-size: .8rem;
+}
+
+.program-info-container > :nth-child(2) > * {
+    padding: .8rem clamp(.5rem, 2vw, 1.5rem);
 }
 
 
@@ -198,7 +202,10 @@
 
 .program-slide.active .program-info-container > :nth-child(2) {
     display: flex;
-    column-gap: 2rem
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    /* justify-content: center; */
 }
 
 .program-slide.active .program-image-container > :nth-child(1) {
