@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nextBtn = document.getElementById("next-btn");
   const prevBtn = document.getElementById("prev-btn");
 
-  const scrollAmount = container.offsetWidth * 0.5; // Scroll by 50% of container width
+  const scrollAmount = container.offsetWidth * 0.95; // Scroll by 50% of container width
 
   function checkScroll() {
     prevBtn.disabled = container.scrollLeft <= 0;
