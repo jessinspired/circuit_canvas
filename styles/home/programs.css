@@ -290,6 +290,6 @@
     .program-info-container > :nth-child(2) > :first-child,
     .program-info-container > :nth-child(2) > :nth-child(2)
     {
-        font-size: .6rem;
+        padding: .5rem;
     }
 }
