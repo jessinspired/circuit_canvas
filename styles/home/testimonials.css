@@ -11,7 +11,7 @@
 
 .testimonial-progress-bar {
     height: 12rem;
-    width: .8rem;
+    width: 2rem;
     border-radius: .5rem;
     background-color: var(--b20);
     position: relative;
