@@ -3,6 +3,15 @@
     padding-bottom: 4rem;
     display: grid;
     row-gap: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.programs .slant {
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    min-width: 30rem;
 }
 
 .programs header {
