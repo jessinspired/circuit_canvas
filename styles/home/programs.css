@@ -10,8 +10,9 @@
 .programs .slant {
     top: 0;
     position: absolute;
-    width: 100vw;
+    width: 102vw;
     min-width: 30rem;
+    left: -.2rem;
 }
 
 .programs header {
