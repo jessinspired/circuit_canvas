@@ -1,4 +1,9 @@
 /* learn more modal */
+.remove-bullet {
+    list-style-type: none;
+
+}
+
 .card-modal h2 {
     font-family: var(--lexend-medium);
     font-weight: normal;
@@ -84,15 +89,17 @@
     justify-content: center;
     border-radius: 2rem;
     padding: .5rem;
+    max-height: 3rem;
+    min-width: 9rem;
 }
 
 
-.header-cta-parent > :first-child {
+.header-cta-parent > :nth-child(1) {
     background-color: var(--purple-900);
     color: white;
 }
 
-.header-cta-parent > :last-child {
+.header-cta-parent > :nth-child(2) {
     color: var(--purple-900);
 }
 
@@ -126,6 +133,7 @@
     padding: 1rem 2rem;
     border-radius: 2rem;
     flex-grow: 0;
+    height: max-content;
 }
 
 
