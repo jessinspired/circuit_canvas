@@ -4,6 +4,9 @@ function initProgramsAnimation() {
   let index = 0;
   const duration = 8000; // 8 seconds
   let interval;
+  let startTime;
+  let elapsedTime = 0;
+  let isPaused = false;
 
   function activateButtonAtIndex(newIndex) {
     // Remove 'active' class from current button and slide
@@ -14,22 +17,19 @@ function initProgramsAnimation() {
 
     // Update index and set new active button
     index = newIndex;
-    const newActiveButton = buttons[index];
-    newActiveButton.classList.add("active");
+    buttons[index].classList.add("active");
 
-    // Get corresponding slide based on data-program
-    let currentProgram = newActiveButton.getAttribute("data-program");
-    let updatedSlide = document.querySelector(
-      `.program-slide[data-program="${currentProgram}"]`
-    );
-    if (updatedSlide) {
-      updatedSlide.classList.add("active");
-    }
+    // Get corresponding slide
+    let currentProgram = buttons[index].getAttribute("data-program");
+    document
+      .querySelector(`.program-slide[data-program="${currentProgram}"]`)
+      ?.classList.add("active");
 
-    // Reset and restart progress bar animation
-    progressBar.style.animation = "none";
-    void progressBar.offsetWidth; // Force reflow to restart animation
-    progressBar.style.animation = `fillUp ${duration / 1000}s linear infinite`;
+    // Reset timing
+    startTime = performance.now();
+    elapsedTime = 0;
+    startAutoCycle();
+    resetProgressBar();
   }
 
   function activateNextButton() {
@@ -38,26 +38,83 @@ function initProgramsAnimation() {
   }
 
   function startAutoCycle() {
-    interval = setInterval(activateNextButton, duration);
+    stopAutoCycle();
+    interval = setTimeout(activateNextButton, duration);
+    startTime = performance.now();
+    progressBar.style.animation = `fillUp ${duration / 1000}s linear`;
   }
 
   function stopAutoCycle() {
-    clearInterval(interval);
+    clearTimeout(interval);
   }
 
-  // Start automatic cycling
-  startAutoCycle();
+  function resetProgressBar() {
+    progressBar.style.animation = "none";
+    void progressBar.offsetWidth; // Force reflow
+    progressBar.style.animation = `fillUp ${duration / 1000}s linear`;
+  }
+
+  function pauseProgramsAnimation() {
+    if (!isPaused) {
+      isPaused = true;
+      clearTimeout(interval);
+      elapsedTime += performance.now() - startTime;
+      let remainingTime = duration - elapsedTime;
+
+      // Pause progress bar
+      progressBar.style.animationPlayState = "paused";
+
+      console.log(`Paused at: ${(elapsedTime / 1000).toFixed(2)}s`);
+      console.log(`Remaining time: ${(remainingTime / 1000).toFixed(2)}s`);
+    }
+  }
+
+  function playProgramsAnimation() {
+    isPaused = false;
+    progressBar.style.animationPlayState = "running";
+    let remainingTime = duration - elapsedTime;
+
+    interval = setTimeout(activateNextButton, remainingTime);
+    startTime = performance.now();
+    console.log(
+      `Resuming at: ${elapsedTime / 1000}s, Remaining: ${remainingTime / 1000}s`
+    );
+  }
+
+  // Start first cycle
+  activateButtonAtIndex(0);
 
   // Add event listeners for manual button clicks
   buttons.forEach((button, btnIndex) => {
     button.addEventListener("click", () => {
-      stopAutoCycle(); // Stop automatic cycling
-      activateButtonAtIndex(btnIndex); // Activate the clicked button
-      startAutoCycle(); // Continue from clicked button
+      activateButtonAtIndex(btnIndex);
     });
   });
+
+  let learnMoreBtns = document.querySelectorAll(
+    ".program-info-container > :nth-child(2) > :nth-child(2)"
+  );
+
+  learnMoreBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      btn.nextElementSibling.showModal();
+      pauseProgramsAnimation();
+    });
+  });
+
+  let closeProgramModalBtns = document.querySelectorAll(
+    ".program-info-container .card-modal > .close-item-modal-btn"
+  );
+  closeProgramModalBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      btn.parentElement.close();
+      playProgramsAnimation();
+    });
+  });
+
+  // Expose function globally
+  window.pauseProgramsAnimation = pauseProgramsAnimation;
+  window.playProgramsAnimation = playProgramsAnimation;
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  initProgramsAnimation();
-});
+document.addEventListener("DOMContentLoaded", initProgramsAnimation);
