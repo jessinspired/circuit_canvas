@@ -15,7 +15,7 @@
     left: -.2rem;
 }
 
-.programs header {
+.programs > header {
     display: grid;
     row-gap: 1rem;
     text-align: center;
@@ -23,7 +23,7 @@
     justify-self: center;
 }
 
-.programs h1 {
+.programs > header > h1 {
     background-color: #F8F9FA;
     width: max-content;
     padding: .2rem 1rem;
@@ -31,11 +31,11 @@
     font-family: var(--lexend-semibold);
     border-radius: .4rem;
     font-size: .8rem;
-    justify-self: center;
     margin-bottom: 1rem;
+    justify-self: center;
 }
 
-.programs header h3 {
+.programs > header > h3 {
     font-family: var(--lexend-regular);
     font-weight: normal;
 }
@@ -278,7 +278,9 @@
     .program-slide {
         flex-direction: column;
         align-items: center;
-        /* background-color: rebeccapurple; */
+    }
+
+    .program-info-container article {
         text-align: center;
     }
 
