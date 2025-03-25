@@ -43,6 +43,10 @@
     height: 22rem;
 }
 
+.services-card-container > * > :nth-child(2) {
+    text-transform: capitalize;
+}
+
 .services-card-container img {
     width: 100%;
     height: 100%;

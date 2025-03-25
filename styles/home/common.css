@@ -1,0 +1,4 @@
+section > header > h1, section > h1 {
+    text-transform: capitalize;
+    font-size: .8rem;
+}
